@@ -5,6 +5,7 @@ import '../models/question.dart';
 
 class AnswerOverlay extends StatelessWidget {
   final bool isCorrect;
+  final bool isGameOver;
   final Question question;
   final VoidCallback onNext;
 
@@ -13,6 +14,7 @@ class AnswerOverlay extends StatelessWidget {
     required this.isCorrect,
     required this.question,
     required this.onNext,
+    this.isGameOver = false,
   });
 
   @override
@@ -20,7 +22,7 @@ class AnswerOverlay extends StatelessWidget {
     return Container(
       width: double.infinity,
       height: double.infinity,
-      color: Colors.black.withOpacity(0.85),
+      color: Colors.black.withValues(alpha: 0.85),
       padding: const EdgeInsets.symmetric(horizontal: 32),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
@@ -87,9 +89,9 @@ class AnswerOverlay extends StatelessWidget {
                   ),
                 ),
                 onPressed: onNext,
-                child: const Text(
-                  'SONRAKİ SORU',
-                  style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                child: Text(
+                  isGameOver ? 'SONUÇLARI GÖR' : 'SONRAKİ SORU',
+                  style: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
                 ),
               ),
             ),

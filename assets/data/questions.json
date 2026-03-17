@@ -1,702 +1,1752 @@
 [
-   {
-      "id": 1,
-      "ifade": "Çin Seddi uzaydan çıplak gözle görülebilir.",
-      "cevap": false,
-      "aciklama": "Bu inanış onlarca yıldır devam eden bir efsane. Astronotlar seddin uzaydan seçilemeyecek kadar dar olduğunu bizzat doğruladı.",
-      "kategori": "Tarih"
-   },
-   {
-      "id": 2,
-      "ifade": "İnsan beyninin sadece %10'unu kullanır.",
-      "cevap": false,
-      "aciklama": "Modern beyin görüntüleme teknikleri, beynin neredeyse her parçasının gün içinde aktif olduğunu göstermektedir.",
-      "kategori": "Bilim"
-   },
-   {
-      "id": 3,
-      "ifade": "Boğalar kırmızı renge sinirlenirler.",
-      "cevap": false,
-      "aciklama": "Boğalar renk körüdür; onları sinirlendiren matadorun pelerininin rengi değil, hareketidir.",
-      "kategori": "Bilim"
-   },
-   {
-      "id": 4,
-      "ifade": "Bukalemunlar sadece saklanmak için renk değiştirirler.",
-      "cevap": false,
-      "aciklama": "Renk değişimi daha çok sıcaklık dengesi ve diğer bukalemunlarla iletişim kurmak içindir.",
-      "kategori": "Bilim"
-   },
-   {
-      "id": 5,
-      "ifade": "Balıkların hafızası 3 saniyedir.",
-      "cevap": false,
-      "aciklama": "Japon balıkları aylar süren bilgileri hatırlayabilir ve karmaşık görevleri öğrenebilirler.",
-      "kategori": "Bilim"
-   },
-   {
-      "id": 6,
-      "ifade": "Deve kuşları tehlike anında kafalarını kuma gömerler.",
-      "cevap": false,
-      "aciklama": "Bu bir optik illüzyondur. Aslında yere uzanıp boyunlarını uzatırlar veya kumdaki yuvalarını gagalarıyla düzeltirler.",
-      "kategori": "Bilim"
-   },
-   {
-      "id": 7,
-      "ifade": "Yarasalar tamamen kördür.",
-      "cevap": false,
-      "aciklama": "Yarasalar görebilirler, hatta bazı türlerin gece görüşü insanlarınkinden çok daha iyidir. Ekosonarı sadece avlanmak için kullanırlar.",
-      "kategori": "Bilim"
-   },
-   {
-      "id": 8,
-      "ifade": "Güneş aslında sarı değil beyazdır.",
-      "cevap": true,
-      "aciklama": "Güneş tüm görünür renkleri yayar, bu da saf beyazdır. Atmosferimiz mavi ışığı dağıttığı için bize sarı görünür.",
-      "kategori": "Bilim"
-   },
-   {
-      "id": 9,
-      "ifade": "Einstein matematikten kalmıştır.",
-      "cevap": false,
-      "aciklama": "Tam tersine, Einstein 15 yaşına gelmeden diferansiyel ve integral hesaplamada uzmanlaşmıştı.",
-      "kategori": "Tarih"
-   },
-   {
-      "id": 10,
-      "ifade": "İnsan vücudundaki en güçlü kas dildir.",
-      "cevap": false,
-      "aciklama": "Güç uyguladığı kuvvete göre çene kası (masseter) en güçlüsüdür, ancak dil en dayanıklı kaslardan biridir.",
-      "kategori": "İnsan Vücudu"
-   },
-   {
-      "id": 11,
-      "ifade": "Napoleon Bonaparte çok kısa boyluydu.",
-      "cevap": false,
-      "aciklama": "Napoleon yaklaşık 1.68m boyundaydı, bu da o dönemki Fransız erkeklerinin ortalama boyundan biraz uzundu.",
-      "kategori": "Tarih"
-   },
-   {
-      "id": 12,
-      "ifade": "Vikings kasklarında boynuz yoktu.",
-      "cevap": true,
-      "aciklama": "Arkeolojik buluntularda boynuzlu Viking kaskına hiç rastlanmamıştır. Bu imaj 19. yüzyıl operalarıyla yayılmıştır.",
-      "kategori": "Tarih"
-   },
-   {
-      "id": 13,
-      "ifade": "Havuç yemek gece görüşünü iyileştirir.",
-      "cevap": false,
-      "aciklama": "Bu, 2. Dünya Savaşı'nda İngilizlerin radar teknolojilerini gizlemek için yaydığı bir propagandadır.",
-      "kategori": "Güncel"
-   },
-   {
-      "id": 14,
-      "ifade": "Öldükten sonra tırnaklar ve saçlar uzamaya devam eder.",
-      "cevap": false,
-      "aciklama": "Vücut su kaybettiği için deri çekilir, bu da tırnakların ve saçların daha uzun görünmesine neden olur.",
-      "kategori": "İnsan Vücudu"
-   },
-   {
-      "id": 15,
-      "ifade": "Cam aslında çok yavaş akan bir sıvıdır.",
-      "cevap": false,
-      "aciklama": "Cam amorf bir katıdır. Eski binalardaki camların altının kalın olması üretim tekniğiyle ilgilidir.",
-      "kategori": "Bilim"
-   },
-   {
-      "id": 16,
-      "ifade": "Edison ampulü icat eden ilk kişidir.",
-      "cevap": false,
-      "aciklama": "Edison'dan önce 20'ye yakın bilim insanı ampul tasarlamıştı; Edison ticari olarak başarılı olanı geliştirdi.",
-      "kategori": "Tarih"
-   },
-   {
-      "id": 17,
-      "ifade": "Parıltılı olan her şey altındır.",
-      "cevap": false,
-      "aciklama": "Bu sadece bir deyimdir ve gerçek değildir. Örneğin demir sülfür da altına çok benzer ama 'yalancı altın'dır.",
-      "kategori": "Güncel"
-   },
-   {
-      "id": 18,
-      "ifade": "Su elektriği iletir.",
-      "cevap": false,
-      "aciklama": "Saf su yalıtkandır. Elektriği ileten suyun içindeki çözünmüş mineraller ve kirlerdir.",
-      "kategori": "Bilim"
-   },
-   {
-      "id": 19,
-      "ifade": "Venüs, Güneş sistemindeki en sıcak gezegendir.",
-      "cevap": true,
-      "aciklama": "Merkür Güneş'e daha yakındır ancak Venüs'ün kalın atmosferi ısıyı hapseder, bu da onu daha sıcak yapar.",
-      "kategori": "Bilim"
-   },
-   {
-      "id": 20,
-      "ifade": "Kola başlangıçta yeşil renkteydi.",
-      "cevap": false,
-      "aciklama": "Kola her zaman bugünkü kahverengi tonundaydı; şişeleri yeşil camdan yapılıyordu.",
-      "kategori": "Pop Kültür"
-   },
-   {
-      "id": 21,
-      "ifade": "İnsanlarda 5 duyu vardır.",
-      "cevap": false,
-      "aciklama": "Denge, sıcaklık, ağrı ve vücut pozisyonu (propriosepsiyon) gibi 20'den fazla duyumuz vardır.",
-      "kategori": "İnsan Vücudu"
-   },
-   {
-      "id": 22,
-      "ifade": "Saçları kestirmek daha gür çıkmasını sağlar.",
-      "cevap": false,
-      "aciklama": "Kesilen saçın ucu küt olduğu için dokununca daha sert ve kalın hissedilir, ama kökten gelen saç değişmez.",
-      "kategori": "İnsan Vücudu"
-   },
-   {
-      "id": 23,
-      "ifade": "Everest Dağı, merkezden ölçüldüğünde en yüksek noktadır.",
-      "cevap": false,
-      "aciklama": "Dünyanın merkezine en uzak nokta, Ekvator'daki şişkinlik nedeniyle Chimborazo Dağı'dır.",
-      "kategori": "Bilim"
-   },
-   {
-      "id": 24,
-      "ifade": "Piramitleri köleler inşa etmiştir.",
-      "cevap": false,
-      "aciklama": "Bulunan mezarlar ve kayıtlar, işçilerin ücret karşılığı çalışan profesyoneller olduğunu göstermektedir.",
-      "kategori": "Tarih"
-   },
-   {
-      "id": 25,
-      "ifade": "Zürafalar hiç uyumazlar.",
-      "cevap": false,
-      "aciklama": "Zürafalar günde yaklaşık 30 dakika, kısa şekerlemeler şeklinde uyurlar.",
-      "kategori": "Bilim"
-   },
-   {
-      "id": 26,
-      "ifade": "Mickey Mouse'un asıl ismi Mortimer idi.",
-      "cevap": true,
-      "aciklama": "Walt Disney önce Mortimer koymak istedi, karısı Lillian ismin çok kasıntı olduğunu söyleyip Mickey'i önerdi.",
-      "kategori": "Pop Kültür"
-   },
-   {
-      "id": 27,
-      "ifade": "Altın balıkların hafızası 3 saniyedir.",
-      "cevap": false,
-      "aciklama": "Bu bir city efsanesidir. Altın balıklar 5 aya kadar bilgileri hatırlayabilir.",
-      "kategori": "Bilim"
-   },
-   {
-      "id": 28,
-      "ifade": "Titanic filmi en çok Oscar kazanan filmlerden biridir.",
-      "cevap": true,
-      "aciklama": "Titanic, Ben-Hur ve Yüzüklerin Efendisi: Kralın Dönüşü ile birlikte 11 Oscar ile rekoru paylaşmaktadır.",
-      "kategori": "Pop Kültür"
-   },
-   {
-      "id": 29,
-      "ifade": "Parmak çıtlatmak kireçlenmeye yol açar.",
-      "cevap": false,
-      "aciklama": "Donald Unger 60 yıl boyunca tek elini çıtlattı ve iki eli arasında hiçbir fark oluşmadı.",
-      "kategori": "İnsan Vücudu"
-   },
-   {
-      "id": 30,
-      "ifade": "Eyfel Kulesi yazın uzayabilir.",
-      "cevap": true,
-      "aciklama": "Isınan metal genleştiği için kulenin boyu yaz aylarında yaklaşık 15 santimetreye kadar artabilir.",
-      "kategori": "Bilim"
-   },
-   {
-      "id": 31,
-      "ifade": "Kan damarları vücudumuzun etrafını iki kez dolaşacak kadar uzundur.",
-      "cevap": true,
-      "aciklama": "Bir yetişkinin tüm damarları uç uca eklenirse yaklaşık 100.000 kilometre eder.",
-      "kategori": "İnsan Vücudu"
-   },
-   {
-      "id": 32,
-      "ifade": "Dünya'nın çekirdeği Güneş'in yüzeyi kadar sıcaktır.",
-      "cevap": true,
-      "aciklama": "Her ikisi de yaklaşık 5.500 - 6.000 santigrat derece civarındadır.",
-      "kategori": "Bilim"
-   },
-   {
-      "id": 33,
-      "ifade": "Kediler her düştüğünde dört ayak üstüne düşer.",
-      "cevap": false,
-      "aciklama": "Kedilerin 'doğrulma refleksi' olsa da, çok alçak veya çok yüksek mesafelerden her zaman başaramayabilirler.",
-      "kategori": "Bilim"
-   },
-   {
-      "id": 34,
-      "ifade": "Arılar birini soktuktan sonra hemen ölürler.",
-      "cevap": false,
-      "aciklama": "Sadece işçi bal arıları sokunca ölür; kraliçe arılar ve eşek arıları defalarca sokabilir.",
-      "kategori": "Bilim"
-   },
-   {
-      "id": 35,
-      "ifade": "İlk bilgisayar bir oda büyüklüğündeydi.",
-      "cevap": true,
-      "aciklama": "ENIAC adı verilen ilk genel amaçlı bilgisayar 167 metrekare alan kaplıyordu.",
-      "kategori": "Bilim"
-   },
-   {
-      "id": 36,
-      "ifade": "Coca-Cola'nın ilk formülünde kokain vardı.",
-      "cevap": true,
-      "aciklama": "19. yüzyılda kokain yasal bir maddeydi ve markanın isminin bir parçası olan koka yapraklarından geliyordu.",
-      "kategori": "Tarih"
-   },
-   {
-      "id": 37,
-      "ifade": "Viyana Kuşatması'nı Osmanlı kazandı.",
-      "cevap": false,
-      "aciklama": "Osmanlı İmparatorluğu her iki Viyana kuşatmasında da (1529 ve 1683) şehri ele geçirememiştir.",
-      "kategori": "Tarih"
-   },
-   {
-      "id": 38,
-      "ifade": "İnsanlar ve şempanzeler %98 oranında aynı DNA'ya sahiptir.",
-      "cevap": true,
-      "aciklama": "Genetik olarak en yakın akrabalarımızdır; buna rağmen çok küçük farklar büyük değişimler yaratır.",
-      "kategori": "Bilim"
-   },
-   {
-      "id": 39,
-      "ifade": "Kibrit, çakmaktan önce icat edilmiştir.",
-      "cevap": false,
-      "aciklama": "İlk çakmak 1823'te, ilk kullanışlı sürtünme kibriti ise 1826 - 1827 yıllarında icat edildi.",
-      "kategori": "Tarih"
-   },
-   {
-      "id": 40,
-      "ifade": "Güneş yanığı aslında hücrelerin intihar etmesidir.",
-      "cevap": true,
-      "aciklama": "DNA'sı hasar gören hücreler kanserleşmemek için kendilerini yok ederler, bu da soyulma ve sızıya neden olur.",
-      "kategori": "İnsan Vücudu"
-   },
-   {
-      "id": 41,
-      "ifade": "Mars'ta gökyüzü gündüzleri pembedir.",
-      "cevap": true,
-      "aciklama": "Atmosferdeki demir zengini tozlar nedeniyle gökyüzü pembemsi ama gün batımı mavidir.",
-      "kategori": "Bilim"
-   },
-   {
-      "id": 42,
-      "ifade": "Ahtapotların üç kalbi vardır.",
-      "cevap": true,
-      "aciklama": "İki kalp kanı solungaçlara pompalar, bir büyük kalp ise vücudun geri kalanına gönderir.",
-      "kategori": "Bilim"
-   },
-   {
-      "id": 43,
-      "ifade": "Satürn'ün halkaları tamamen katı bir buz kütlesidir.",
-      "cevap": false,
-      "aciklama": "Halkalar milyarlarca küçük toz, buz ve kaya parçalarından oluşur.",
-      "kategori": "Bilim"
-   },
-   {
-      "id": 44,
-      "ifade": "Yıldızlar aslında geceleri yanıp sönmez.",
-      "cevap": true,
-      "aciklama": "Yanıp sönme etkisi Dünya atmosferindeki türbülanstan kaynaklanan bir illüzyondur.",
-      "kategori": "Bilim"
-   },
-   {
-      "id": 45,
-      "ifade": "Uykuda örümcek yutarız.",
-      "cevap": false,
-      "aciklama": "Örümcekler titreşimlere duyarlıdır; uyuyan dev bir insana yaklaşmak onlar için büyük bir tehlikedir.",
-      "kategori": "Güncel"
-   },
-   {
-      "id": 46,
-      "ifade": "Domates aslında bir meyvedir.",
-      "cevap": true,
-      "aciklama": "Botanik olarak çekirdekli olduğu için meyvedir ama mutfakta sebze olarak kabul edilir.",
-      "kategori": "Bilim"
-   },
-   {
-      "id": 47,
-      "ifade": "Işık hızı saniyede yaklaşık 300.000 kilometredir.",
-      "cevap": true,
-      "aciklama": "Işık bir saniyede dünyayı yaklaşık 7.5 kez tur atabilir.",
-      "kategori": "Bilim"
-   },
-   {
-      "id": 48,
-      "ifade": "Bal bozulmayan tek doğal besindir.",
-      "cevap": true,
-      "aciklama": "Binlerce yıllık Mısır mezarlarında bulunan ballar hala yenilebilir durumdadır.",
-      "kategori": "Güncel"
-   },
-   {
-      "id": 49,
-      "ifade": "Yunuslar uyurken bir gözlerini açık tutarlar.",
-      "cevap": true,
-      "aciklama": "Beyinlerinin sadece tek yarısı uyur, diğer yarısı nefes almak ve tehlikeyi izlemek için uyanık kalır.",
-      "kategori": "Bilim"
-   },
-   {
-      "id": 50,
-      "ifade": "İnsanlar maymunlardan gelmiştir.",
-      "cevap": false,
-      "aciklama": "Evrim teorisine göre insanlar ve maymunlar ortak bir atadan gelmiştir, biri diğerine dönüşmemiştir.",
-      "kategori": "Bilim"
-   },
-   {
-      "id": 51,
-      "ifade": "Leonardo da Vinci, Mona Lisa'yı 4 yılda bitirdi.",
-      "cevap": true,
-      "aciklama": "Çalışmaya 1503'te başladı ve yaklaşık 4 yıl sürdü, ancak daha sonra da üzerinde düzeltmeler yaptı.",
-      "kategori": "Tarih"
-   },
-   {
-      "id": 52,
-      "ifade": "Ay'ın arka yüzü tamamen karanlıktır.",
-      "cevap": false,
-      "aciklama": "Ay'ın her yeri güneş ışığı alır; 'arka yüz' sadece bizim dünyadan göremediğimiz taraftır.",
-      "kategori": "Bilim"
-   },
-   {
-      "id": 53,
-      "ifade": "Ses boşlukta yayılmaz.",
-      "cevap": true,
-      "aciklama": "Ses mekanik bir dalgadır ve yayılmak için hava veya su gibi bir ortama ihtiyaç duyar.",
-      "kategori": "Bilim"
-   },
-   {
-      "id": 54,
-      "ifade": "Denizatı yavrularını babaları doğurur.",
-      "cevap": true,
-      "aciklama": "Dişi yumurtaları erkeğin kuluçka kesesine bırakır ve yavrular orada gelişir.",
-      "kategori": "Bilim"
-   },
-   {
-      "id": 55,
-      "ifade": "Vücudumuzun %70'i sudur.",
-      "cevap": true,
-      "aciklama": "Yaşa ve cinsiyete göre değişse de bir yetişkinin ortalama su oranı bu civardadır.",
-      "kategori": "İnsan Vücudu"
-   },
-   {
-      "id": 56,
-      "ifade": "Penguenler sadece Güney Kutbu'nda yaşar.",
-      "cevap": false,
-      "aciklama": "Bazı türler Galapagos Adaları gibi daha sıcak bölgelerde, ekvatora yakın yaşayabilirler.",
-      "kategori": "Bilim"
-   },
-   {
-      "id": 57,
-      "ifade": "Statue of Liberty (Özgürlük Anıtı) Fransa'nın hediyesidir.",
-      "cevap": true,
-      "aciklama": "ABD'nin 100. yıl dönümü anısına Fransa halkı tarafından hediye edilmiştir.",
-      "kategori": "Tarih"
-   },
-   {
-      "id": 58,
-      "ifade": "Sağ elini kullananlar sol elini kullananlardan daha uzun yaşar.",
-      "cevap": false,
-      "aciklama": "Bu eski araştırmaların yanlış bir yorumudur; günümüzde böyle bir fark kanıtlanmamıştır.",
-      "kategori": "Güncel"
-   },
-   {
-      "id": 59,
-      "ifade": "Mavi balinaların dili bir fil ağırlığındadır.",
-      "cevap": true,
-      "aciklama": "Dilleri o kadar büyüktür ki üzerine 40-50 kişi sığabilir.",
-      "kategori": "Bilim"
-   },
-   {
-      "id": 60,
-      "ifade": "Zebra çizgileri sadece kamuflaj içindir.",
-      "cevap": false,
-      "aciklama": "Çizgiler aynı zamanda sinekleri uzak tutmak ve vücut ısısını düzenlemek için de kullanılır.",
-      "kategori": "Bilim"
-   },
-   {
-      "id": 61,
-      "ifade": "İnternet ve World Wide Web (WWW) aynı şeydir.",
-      "cevap": false,
-      "aciklama": "İnternet ağ altyapısıdır, WWW ise bu ağ üzerinde çalışan bir bilgi paylaşım sistemidir.",
-      "kategori": "Güncel"
-   },
-   {
-      "id": 62,
-      "ifade": "Dünya'nın en büyük çölü Sahra Çölü'dür.",
-      "cevap": false,
-      "aciklama": "Dünya'nın en büyük çölü aslında Antarktika'dır; çöller yağış miktarına göre belirlenir.",
-      "kategori": "Bilim"
-   },
-   {
-      "id": 63,
-      "ifade": "Kedilerin tatlı duyusu yoktur.",
-      "cevap": true,
-      "aciklama": "Dillerinde şekerli tatları algılayan reseptörler bulunmaz, bu yüzden tatlıyı ayırt edemezler.",
-      "kategori": "Bilim"
-   },
-   {
-      "id": 64,
-      "ifade": "Tavşanlar havuç yemeyi her şeyden çok severler.",
-      "cevap": false,
-      "aciklama": "Havuç şekerlidir ve tavşanlar için ana besin değildir; asıl saman ve yeşil yaprak yemelidirler.",
-      "kategori": "Pop Kültür"
-   },
-   {
-      "id": 65,
-      "ifade": "İnsan kemikleri çelikten daha güçlüdür.",
-      "cevap": true,
-      "aciklama": "Aynı ağırlıktaki kemik ve çelik kıyaslandığında, kemik basınç altında daha dayanıklıdır.",
-      "kategori": "İnsan Vücudu"
-   },
-   {
-      "id": 66,
-      "ifade": "Güneş'e en yakın gezegen en sıcak gezegendir.",
-      "cevap": false,
-      "aciklama": "Merkür yakındır ama atmosferi yoktur; Venüs sera etkisiyle daha sıcaktır.",
-      "kategori": "Bilim"
-   },
-   {
-      "id": 67,
-      "ifade": "Arıların 5 gözü vardır.",
-      "cevap": true,
-      "aciklama": "İki büyük bileşik gözün yanında, kafalarının üstünde ışığı algılayan 3 minik gözleri daha bulunur.",
-      "kategori": "Bilim"
-   },
-   {
-      "id": 68,
-      "ifade": "Muz aslında bir meyve değil bir ottur.",
-      "cevap": true,
-      "aciklama": "Muz bitkisi odunsu bir gövdeye sahip olmadığı için botanik olarak dev bir ot sayılır.",
-      "kategori": "Bilim"
-   },
-   {
-      "id": 69,
-      "ifade": "İpek böcekleri aslında böcek değil bir tırtıldır.",
-      "cevap": true,
-      "aciklama": "Güve haline gelmeden önceki tırtıl evrelerinde ipek üretirler.",
-      "kategori": "Bilim"
-   },
-   {
-      "id": 70,
-      "ifade": "Kıyamet günü sığınakları için Norveç'te bir tohum deposu vardır.",
-      "cevap": true,
-      "aciklama": "Svalbard Küresel Tohum Deposu, bitki çeşitliliğini korumak için inşa edilmiştir.",
-      "kategori": "Güncel"
-   },
-   {
-      "id": 71,
-      "ifade": "Kola içinde fare ölüsü çıktığı bir dönem gerçek olmuştur.",
-      "cevap": false,
-      "aciklama": "Bu markaları karalamak için uydurulmuş bir şehir efsanesidir.",
-      "kategori": "Pop Kültür"
-   },
-   {
-      "id": 72,
-      "ifade": "Sokrates'in yazılı hiçbir eseri günümüze ulaşmamıştır.",
-      "cevap": true,
-      "aciklama": "Sokrates hiçbir şey yazmamıştır; fikirlerini öğrencisi Platon'un yazılarından biliyoruz.",
-      "kategori": "Tarih"
-   },
-   {
-      "id": 73,
-      "ifade": "Marslı filmindeki Mars görüntüsü Ürdün'de çekilmiştir.",
-      "cevap": true,
-      "aciklama": "Wadi Rum çölü, kızıl kumları nedeniyle Mars temalı filmlerin popüler mekanıdır.",
-      "kategori": "Pop Kültür"
-   },
-   {
-      "id": 74,
-      "ifade": "Ay'da yürüyen ilk insan Neil Armstrong'dur.",
-      "cevap": true,
-      "aciklama": "1969 yılında Apollo 11 göreviyle bu tarihi adımı atmıştır.",
-      "kategori": "Tarih"
-   },
-   {
-      "id": 75,
-      "ifade": "Köpekler sadece siyah beyaz görür.",
-      "cevap": false,
-      "aciklama": "Sarı ve mavi tonlarını görebilirler; sadece kırmızı ve yeşili ayırt etmekte zorlanırlar.",
-      "kategori": "Bilim"
-   },
-   {
-      "id": 76,
-      "ifade": "Ispanak en çok demir içeren yiyecektir.",
-      "cevap": false,
-      "aciklama": "Bu inanış bir ondalık virgül hatasından kaynaklanmıştır; aslında kırmızı et ve mercimekte daha çok vardır.",
-      "kategori": "Güncel"
-   },
-   {
-      "id": 77,
-      "ifade": "Shrek karakteri gerçek bir insandan ilham alınmıştır.",
-      "cevap": true,
-      "aciklama": "Profesyonel güreşçi Maurice Tillet'in görünümünden esinlenildiği söylenmektedir.",
-      "kategori": "Pop Kültür"
-   },
-   {
-      "id": 78,
-      "ifade": "İnsanlar ve muzlar %50 oranında aynı DNA'ya sahiptir.",
-      "cevap": true,
-      "aciklama": "Temel hücre işlevleri benzer olduğu için şaşırtıcı ama gerçektir.",
-      "kategori": "Bilim"
-   },
-   {
-      "id": 79,
-      "ifade": "Eyfel Kulesi aslında Barcelona için tasarlanmıştı.",
-      "cevap": true,
-      "aciklama": "Barcelona şehri projeyi pahalı ve çirkin bulduğu için reddetmiştir.",
-      "kategori": "Tarih"
-   },
-   {
-      "id": 80,
-      "ifade": "Uydudan görülebilen tek insan yapısı Çin Seddi'dir.",
-      "cevap": false,
-      "aciklama": "Işıkları yanan şehirler, piramitler ve büyük barajlar da görülebilir.",
-      "kategori": "Güncel"
-   },
-   {
-      "id": 81,
-      "ifade": "İnsan gözü 576 megapiksel çözünürlüğe denktir.",
-      "cevap": true,
-      "aciklama": "Statik bir değer değil ama beynimizin birleştirdiği görüntü kabaca bu detaydadır.",
-      "kategori": "İnsan Vücudu"
-   },
-   {
-      "id": 82,
-      "ifade": "Dinozorlar ve insanlar aynı dönemde yaşamıştır.",
-      "cevap": false,
-      "aciklama": "Dinozorlar 65 milyon yıl önce yok oldu, ilk insanlar ise sadece birkaç milyon yıl önce ortaya çıktı.",
-      "kategori": "Tarih"
-   },
-   {
-      "id": 83,
-      "ifade": "Buzullar tatlı su depolarıdır.",
-      "cevap": true,
-      "aciklama": "Dünya'nın tatlı su rezervinin yaklaşık %70'i buzullarda donmuş haldedir.",
-      "kategori": "Bilim"
-   },
-   {
-      "id": 84,
-      "ifade": "Akrep burcu zehirli tek burçtur.",
-      "cevap": false,
-      "aciklama": "Astroloji bilimsel bir gerçeklik değildir, sadece popüler bir inanıştır.",
-      "kategori": "Güncel"
-   },
-   {
-      "id": 85,
-      "ifade": "İsviçre'nin resmi bir başkenti yoktur.",
-      "cevap": true,
-      "aciklama": "Bern 'federal şehir' statüsündedir ama yasada başkent olarak belirtilmemiştir.",
-      "kategori": "Tarih"
-   },
-   {
-      "id": 86,
-      "ifade": "Sineklerin ömrü sadece 24 saattir.",
-      "cevap": false,
-      "aciklama": "Ev sinekleri uygun koşullarda 15 ile 30 gün arasında yaşayabilirler.",
-      "kategori": "Bilim"
-   },
-   {
-      "id": 87,
-      "ifade": "Oksijen beynimizin %20'sini kullanır.",
-      "cevap": true,
-      "aciklama": "Vücut ağırlığının %2'si olmasına rağmen enerjinin ve oksijenin beşte birini beyin harcar.",
-      "kategori": "İnsan Vücudu"
-   },
-   {
-      "id": 88,
-      "ifade": "Ay'da koku vardır.",
-      "cevap": true,
-      "aciklama": "Astronotlar Ay tozunun barut gibi koktuğunu tarif etmişlerdir.",
-      "kategori": "Bilim"
-   },
-   {
-      "id": 89,
-      "ifade": "Dünya'da yaşayan insan sayısı, ölenlerden fazladır.",
-      "cevap": false,
-      "aciklama": "Şimdiye kadar yaşamış yaklaşık 100 milyar insan varken şu an 8 milyar insan yaşamaktadır.",
-      "kategori": "Güncel"
-   },
-   {
-      "id": 90,
-      "ifade": "Yılanların kulakları yoktur.",
-      "cevap": false,
-      "aciklama": "Dış kulakları yoktur ama kafatası içindeki kemiklerle yerdeki titreşimleri duyabilirler.",
-      "kategori": "Bilim"
-   },
-   {
-      "id": 91,
-      "ifade": "Winston Churchill Nobel Edebiyat Ödülü almıştır.",
-      "cevap": true,
-      "aciklama": "Barış ödülü değil, 1953 yılında biyografi ve tarih yazılarıyla Edebiyat ödülünü almıştır.",
-      "kategori": "Tarih"
-   },
-   {
-      "id": 92,
-      "ifade": "Kızılötesi ışığı gözle görebiliriz.",
-      "cevap": false,
-      "aciklama": "İnsan gözü görünür ışık spektrumunu görür, kızılötesi bu sınırın dışındadır.",
-      "kategori": "Bilim"
-   },
-   {
-      "id": 93,
-      "ifade": "En çok ülke ile sınırı olan ülke Çin'dir.",
-      "cevap": true,
-      "aciklama": "Çin ve Rusya 14'er ülke ile en çok komşusu olan ülkelerdir.",
-      "kategori": "Güncel"
-   },
-   {
-      "id": 94,
-      "ifade": "Sıcak su soğuk sudan daha hızlı donabilir.",
-      "cevap": true,
-      "aciklama": "Mpemba etkisi olarak bilinen bu durum belirli koşullar altında gerçekleşebilir.",
-      "kategori": "Bilim"
-   },
-   {
-      "id": 95,
-      "ifade": "Aynalar ışığı %100 yansıtır.",
-      "cevap": false,
-      "aciklama": "Çoğu ayna ışığın bir kısmını emer veya dağıtır, yansıtma oranı %90-95 civarındadır.",
-      "kategori": "Bilim"
-   },
-   {
-      "id": 96,
-      "ifade": "Atlar ayakta uyuyabilirler.",
-      "cevap": true,
-      "aciklama": "Bacaklarındaki kilit mekanizması sayesinde devrilmeden şekerleme yapabilirler.",
-      "kategori": "Bilim"
-   },
-   {
-      "id": 97,
-      "ifade": "İlk cep telefonu görüşmesi 1973'te yapıldı.",
-      "cevap": true,
-      "aciklama": "Motorola mühendisi Martin Cooper rakip firmayı arayarak ilk görüşmeyi gerçekleştirdi.",
-      "kategori": "Tarih"
-   },
-   {
-      "id": 98,
-      "ifade": "Van Gogh kulağının tamamını kesmiştir.",
-      "cevap": false,
-      "aciklama": "Sadece sol kulak memesinin bir kısmını kestiği düşünülmektedir.",
-      "kategori": "Tarih"
-   },
-   {
-      "id": 99,
-      "ifade": "Netflix'in ilk işi posta ile DVD kiralamaktı.",
-      "cevap": true,
-      "aciklama": "1997'de bir film kiralama servisi olarak başladı, dijital yayına çok sonra geçti.",
-      "kategori": "Pop Kültür"
-   },
-   {
-      "id": 100,
-      "ifade": "Ekvator'da yerçekimi daha azdır.",
-      "cevap": true,
-      "aciklama": "Dünya'nın merkezinden daha uzak olunduğu için yerçekimi kutuplara göre biraz daha zayıftır.",
-      "kategori": "Bilim"
-   }
+  {
+    "id": 1,
+    "ifade": "Çin Seddi uzaydan çıplak gözle görülebilir.",
+    "cevap": false,
+    "aciklama": "Bu inanış onlarca yıldır devam eden bir efsane. Astronotlar seddin uzaydan seçilemeyecek kadar dar olduğunu bizzat doğruladı.",
+    "kategori": "Tarih"
+  },
+  {
+    "id": 2,
+    "ifade": "İnsan beyninin sadece %10'unu kullanır.",
+    "cevap": false,
+    "aciklama": "Modern beyin görüntüleme teknikleri, beynin neredeyse her parçasının gün içinde aktif olduğunu göstermektedir.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 3,
+    "ifade": "Boğalar kırmızı renge sinirlenirler.",
+    "cevap": false,
+    "aciklama": "Boğalar renk körüdür; onları sinirlendiren matadorun pelerininin rengi değil, hareketidir.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 4,
+    "ifade": "Bukalemunlar sadece saklanmak için renk değiştirirler.",
+    "cevap": false,
+    "aciklama": "Renk değişimi daha çok sıcaklık dengesi ve diğer bukalemunlarla iletişim kurmak içindir.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 5,
+    "ifade": "Balıkların hafızası 3 saniyedir.",
+    "cevap": false,
+    "aciklama": "Japon balıkları aylar süren bilgileri hatırlayabilir ve karmaşık görevleri öğrenebilirler.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 6,
+    "ifade": "Deve kuşları tehlike anında kafalarını kuma gömerler.",
+    "cevap": false,
+    "aciklama": "Bu bir optik illüzyondur. Aslında yere uzanıp boyunlarını uzatırlar veya kumdaki yuvalarını gagalarıyla düzeltirler.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 7,
+    "ifade": "Yarasalar tamamen kördür.",
+    "cevap": false,
+    "aciklama": "Yarasalar görebilirler, hatta bazı türlerin gece görüşü insanlarınkinden çok daha iyidir. Ekosonarı sadece avlanmak için kullanırlar.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 8,
+    "ifade": "Güneş aslında sarı değil beyazdır.",
+    "cevap": true,
+    "aciklama": "Güneş tüm görünür renkleri yayar, bu da saf beyazdır. Atmosferimiz mavi ışığı dağıttığı için bize sarı görünür.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 9,
+    "ifade": "Einstein matematikten kalmıştır.",
+    "cevap": false,
+    "aciklama": "Tam tersine, Einstein 15 yaşına gelmeden diferansiyel ve integral hesaplamada uzmanlaşmıştı.",
+    "kategori": "Tarih"
+  },
+  {
+    "id": 10,
+    "ifade": "İnsan vücudundaki en güçlü kas dildir.",
+    "cevap": false,
+    "aciklama": "Güç uyguladığı kuvvete göre çene kası (masseter) en güçlüsüdür, ancak dil en dayanıklı kaslardan biridir.",
+    "kategori": "İnsan Vücudu"
+  },
+  {
+    "id": 11,
+    "ifade": "Napoleon Bonaparte çok kısa boyluydu.",
+    "cevap": false,
+    "aciklama": "Napoleon yaklaşık 1.68m boyundaydı, bu da o dönemki Fransız erkeklerinin ortalama boyundan biraz uzundu.",
+    "kategori": "Tarih"
+  },
+  {
+    "id": 12,
+    "ifade": "Viking kasklarında boynuz yoktu.",
+    "cevap": true,
+    "aciklama": "Arkeolojik buluntularda boynuzlu Viking kaskına hiç rastlanmamıştır. Bu imaj 19. yüzyıl operalarıyla yayılmıştır.",
+    "kategori": "Tarih"
+  },
+  {
+    "id": 13,
+    "ifade": "Havuç yemek gece görüşünü iyileştirir.",
+    "cevap": false,
+    "aciklama": "Bu, 2. Dünya Savaşı'nda İngilizlerin radar teknolojilerini gizlemek için yaydığı bir propagandadır.",
+    "kategori": "Güncel"
+  },
+  {
+    "id": 14,
+    "ifade": "Öldükten sonra tırnaklar ve saçlar uzamaya devam eder.",
+    "cevap": false,
+    "aciklama": "Vücut su kaybettiği için deri çekilir, bu da tırnakların ve saçların daha uzun görünmesine neden olur.",
+    "kategori": "İnsan Vücudu"
+  },
+  {
+    "id": 15,
+    "ifade": "Cam aslında çok yavaş akan bir sıvıdır.",
+    "cevap": false,
+    "aciklama": "Cam amorf bir katıdır. Eski binalardaki camların altının kalın olması üretim tekniğiyle ilgilidir.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 16,
+    "ifade": "Edison ampulü icat eden ilk kişidir.",
+    "cevap": false,
+    "aciklama": "Edison'dan önce 20'ye yakın bilim insanı ampul tasarlamıştı; Edison ticari olarak başarılı olanı geliştirdi.",
+    "kategori": "Tarih"
+  },
+  {
+    "id": 17,
+    "ifade": "Parıltılı olan her şey altındır.",
+    "cevap": false,
+    "aciklama": "Bu sadece bir deyimdir ve gerçek değildir. Örneğin demir sülfür de altına çok benzer ama 'yalancı altın'dır.",
+    "kategori": "Güncel"
+  },
+  {
+    "id": 18,
+    "ifade": "Su elektriği iletir.",
+    "cevap": false,
+    "aciklama": "Saf su yalıtkandır. Elektriği ileten suyun içindeki çözünmüş mineraller ve kirlerdir.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 19,
+    "ifade": "Venüs, Güneş sistemindeki en sıcak gezegendir.",
+    "cevap": true,
+    "aciklama": "Merkür Güneş'e daha yakındır ancak Venüs'ün kalın atmosferi ısıyı hapseder, bu da onu daha sıcak yapar.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 20,
+    "ifade": "Kola başlangıçta yeşil renkteydi.",
+    "cevap": false,
+    "aciklama": "Kola her zaman bugünkü kahverengi tonundaydı; şişeleri yeşil camdan yapılıyordu.",
+    "kategori": "Pop Kültür"
+  },
+  {
+    "id": 21,
+    "ifade": "İnsanlarda 5 duyu vardır.",
+    "cevap": false,
+    "aciklama": "Denge, sıcaklık, ağrı ve vücut pozisyonu (propriosepsiyon) gibi 20'den fazla duyumuz vardır.",
+    "kategori": "İnsan Vücudu"
+  },
+  {
+    "id": 22,
+    "ifade": "Saçları kestirmek daha gür çıkmasını sağlar.",
+    "cevap": false,
+    "aciklama": "Kesilen saçın ucu küt olduğu için dokununca daha sert ve kalın hissedilir, ama kökten gelen saç değişmez.",
+    "kategori": "İnsan Vücudu"
+  },
+  {
+    "id": 23,
+    "ifade": "Everest Dağı, merkezden ölçüldüğünde en yüksek noktadır.",
+    "cevap": false,
+    "aciklama": "Dünyanın merkezine en uzak nokta, Ekvator'daki şişkinlik nedeniyle Chimborazo Dağı'dır.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 24,
+    "ifade": "Piramitleri köleler inşa etmiştir.",
+    "cevap": false,
+    "aciklama": "Bulunan mezarlar ve kayıtlar, işçilerin ücret karşılığı çalışan profesyoneller olduğunu göstermektedir.",
+    "kategori": "Tarih"
+  },
+  {
+    "id": 25,
+    "ifade": "Zürafalar hiç uyumazlar.",
+    "cevap": false,
+    "aciklama": "Zürafalar günde yaklaşık 30 dakika, kısa şekerlemeler şeklinde uyurlar.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 26,
+    "ifade": "Mickey Mouse'un asıl ismi Mortimer idi.",
+    "cevap": true,
+    "aciklama": "Walt Disney önce Mortimer koymak istedi, karısı Lillian ismin çok kasıntı olduğunu söyleyip Mickey'i önerdi.",
+    "kategori": "Pop Kültür"
+  },
+  {
+    "id": 27,
+    "ifade": "Altın balıkların hafızası 3 saniyedir.",
+    "cevap": false,
+    "aciklama": "Bu bir şehir efsanesidir. Altın balıklar 5 aya kadar bilgileri hatırlayabilir.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 28,
+    "ifade": "Titanic filmi en çok Oscar kazanan filmlerden biridir.",
+    "cevap": true,
+    "aciklama": "Titanic, Ben-Hur ve Yüzüklerin Efendisi: Kralın Dönüşü ile birlikte 11 Oscar ile rekoru paylaşmaktadır.",
+    "kategori": "Pop Kültür"
+  },
+  {
+    "id": 29,
+    "ifade": "Parmak çıtlatmak kireçlenmeye yol açar.",
+    "cevap": false,
+    "aciklama": "Donald Unger 60 yıl boyunca tek elini çıtlattı ve iki eli arasında hiçbir fark oluşmadı.",
+    "kategori": "İnsan Vücudu"
+  },
+  {
+    "id": 30,
+    "ifade": "Eyfel Kulesi yazın uzayabilir.",
+    "cevap": true,
+    "aciklama": "Isınan metal genleştiği için kulenin boyu yazı aylarında yaklaşık 15 santimetreye kadar artabilir.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 31,
+    "ifade": "Kan damarları vücudumuzun etrafını iki kez dolaşacak kadar uzundur.",
+    "cevap": true,
+    "aciklama": "Bir yetişkinin tüm damarları uç uca eklenirse yaklaşık 100.000 kilometre eder.",
+    "kategori": "İnsan Vücudu"
+  },
+  {
+    "id": 32,
+    "ifade": "Dünya'nın çekirdeği Güneş'in yüzeyi kadar sıcaktır.",
+    "cevap": true,
+    "aciklama": "Her ikisi de yaklaşık 5.500 - 6.000 santigrat derece civarındadır.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 33,
+    "ifade": "Kediler her düştüğünde dört ayak üstüne düşer.",
+    "cevap": false,
+    "aciklama": "Kedilerin 'doğrulma refleksi' olsa da, çok alçak veya çok yüksek mesafelerden her zaman başaramayabilirler.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 34,
+    "ifade": "Arılar birini soktuktan sonra hemen ölürler.",
+    "cevap": false,
+    "aciklama": "Sadece işçi bal arıları sokunca ölür; kraliçe arılar ve eşek arıları defalarca sokabilir.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 35,
+    "ifade": "İlk bilgisayar bir oda büyüklüğündeydi.",
+    "cevap": true,
+    "aciklama": "ENIAC adı verilen ilk genel amaçlı bilgisayar 167 metrekare alan kaplıyordu.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 36,
+    "ifade": "Coca-Cola'nın ilk formülünde kokain vardı.",
+    "cevap": true,
+    "aciklama": "19. yüzyılda kokain yasal bir maddeydi ve markanın isminin bir parçası olan koka yapraklarından geliyordu.",
+    "kategori": "Tarih"
+  },
+  {
+    "id": 37,
+    "ifade": "Viyana Kuşatması'nı Osmanlı kazandı.",
+    "cevap": false,
+    "aciklama": "Osmanlı İmparatorluğu her iki Viyana kuşatmasında da (1529 ve 1683) şehri ele geçirememiştir.",
+    "kategori": "Tarih"
+  },
+  {
+    "id": 38,
+    "ifade": "İnsanlar ve şempanzeler %98 oranında aynı DNA'ya sahiptir.",
+    "cevap": true,
+    "aciklama": "Genetik olarak en yakın akrabalarımızdır; buna rağmen çok küçük farklar büyük değişimler yaratır.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 39,
+    "ifade": "Kibrit, çakmaktan önce icat edilmiştir.",
+    "cevap": false,
+    "aciklama": "İlk çakmak 1823'te, ilk kullanışlı sürtünme kibriti ise 1826 - 1827 yıllarında icat edildi.",
+    "kategori": "Tarih"
+  },
+  {
+    "id": 40,
+    "ifade": "Güneş yanığı aslında hücrelerin intihar etmesidir.",
+    "cevap": true,
+    "aciklama": "DNA'sı hasar gören hücreler kanserleşmemek için kendilerini yok ederler, bu da soyulma ve sızıya neden olur.",
+    "kategori": "İnsan Vücudu"
+  },
+  {
+    "id": 41,
+    "ifade": "Mars'ta gökyüzü gündüzleri pembedir.",
+    "cevap": true,
+    "aciklama": "Atmosferdeki demir zengini tozlar nedeniyle gökyüzü pembemsi ama gün batımı mavidir.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 42,
+    "ifade": "Ahtapotların üç kalbi vardır.",
+    "cevap": true,
+    "aciklama": "İki kalp kanı solungaçlara pompalar, bir büyük kalp ise vücudun geri kalanına gönderir.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 43,
+    "ifade": "Satürn'ün halkaları tamamen katı bir buz kütlesidir.",
+    "cevap": false,
+    "aciklama": "Halkalar milyarlarca küçük toz, buz ve kaya parçalarından oluşur.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 44,
+    "ifade": "Yıldızlar aslında geceleri yanıp sönmez.",
+    "cevap": true,
+    "aciklama": "Yanıp sönme etkisi Dünya atmosferindeki türbülanstan kaynaklanan bir illüzyondur.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 45,
+    "ifade": "Uykuda örümcek yutarız.",
+    "cevap": false,
+    "aciklama": "Örümcekler titreşimlere duyarlıdır; uyuyan dev bir insana yaklaşmak onlar için büyük bir tehlikedir.",
+    "kategori": "Pop Kültür"
+  },
+  {
+    "id": 46,
+    "ifade": "Domates aslında bir meyvedir.",
+    "cevap": true,
+    "aciklama": "Botanik olarak çekirdekli olduğu için meyvedir ama mutfakta sebze olarak kabul edilir.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 47,
+    "ifade": "Işık hızı saniyede yaklaşık 300.000 kilometredir.",
+    "cevap": true,
+    "aciklama": "Işık bir saniyede dünyayı yaklaşık 7.5 kez tur atabilir.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 48,
+    "ifade": "Bal bozulmayan tek doğal besindir.",
+    "cevap": true,
+    "aciklama": "Binlerce yıllık Mısır mezarlarında bulunan ballar hala yenilebilir durumdadır.",
+    "kategori": "Pop Kültür"
+  },
+  {
+    "id": 49,
+    "ifade": "Yunuslar uyurken bir gözlerini açık tutarlar.",
+    "cevap": true,
+    "aciklama": "Beyinlerinin sadece tek yarısı uyur, diğer yarısı nefes almak ve tehlikeyi izlemek için uyanık kalır.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 50,
+    "ifade": "İnsanlar maymunlardan gelmiştir.",
+    "cevap": false,
+    "aciklama": "Evrim teorisine göre insanlar ve maymunlar ortak bir atadan gelmiştir, biri diğerine dönüşmemiştir.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 51,
+    "ifade": "Leonardo da Vinci, Mona Lisa'yı 4 yılda bitirdi.",
+    "cevap": true,
+    "aciklama": "Çalışmaya 1503'te başladı ve yaklaşık 4 yıl sürdü, ancak daha sonra da üzerinde düzeltmeler yaptı.",
+    "kategori": "Tarih"
+  },
+  {
+    "id": 52,
+    "ifade": "Ay'ın arka yüzü tamamen karanlıktır.",
+    "cevap": false,
+    "aciklama": "Ay'ın her yeri güneş ışığı alır; 'arka yüz' sadece bizim dünyadan göremediğimiz taraftır.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 53,
+    "ifade": "Ses boşlukta yayılmaz.",
+    "cevap": true,
+    "aciklama": "Ses mekanik bir dalgadır ve yayılmak için hava veya su gibi bir ortama ihtiyaç duyar.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 54,
+    "ifade": "Denizatı yavrularını babaları doğurur.",
+    "cevap": true,
+    "aciklama": "Dişi yumurtaları erkeğin kuluçka kesesine bırakır ve yavrular orada gelişir.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 55,
+    "ifade": "Vücudumuzun %70'i sudur.",
+    "cevap": true,
+    "aciklama": "Yaşa ve cinsiyete göre değişse de bir yetişkinin ortalama su oranı bu civardadır.",
+    "kategori": "İnsan Vücudu"
+  },
+  {
+    "id": 56,
+    "ifade": "Penguenler sadece Güney Kutbu'nda yaşar.",
+    "cevap": false,
+    "aciklama": "Bazı türler Galapagos Adaları gibi daha sıcak bölgelerde, ekvatora yakın yaşayabilirler.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 57,
+    "ifade": "Özgürlük Anıtı (Statue of Liberty) Fransa'nın hediyesidir.",
+    "cevap": true,
+    "aciklama": "ABD'nin 100. yıl dönümü anısına Fransa halkı tarafından hediye edilmiştir.",
+    "kategori": "Tarih"
+  },
+  {
+    "id": 58,
+    "ifade": "Sağ elini kullananlar sol elini kullananlardan daha uzun yaşar.",
+    "cevap": false,
+    "aciklama": "Bu eski araştırmaların yanlış bir yorumudur; günümüzde böyle bir fark kanıtlanmamıştır.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 59,
+    "ifade": "Mavi balinaların dili bir fil ağırlığındadır.",
+    "cevap": true,
+    "aciklama": "Dilleri o kadar büyüktür ki üzerine 40-50 kişi sığabilir.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 60,
+    "ifade": "Zebra çizgileri sadece kamuflaj içindir.",
+    "cevap": false,
+    "aciklama": "Çizgiler aynı zamanda sinekleri uzak tutmak ve vücut ısısını düzenlemek için de kullanılır.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 61,
+    "ifade": "İnternet ve World Wide Web (WWW) aynı şeydir.",
+    "cevap": false,
+    "aciklama": "İnternet ağ altyapısıdır, WWW ise bu ağ üzerinde çalışan bir bilgi paylaşım sistemidir.",
+    "kategori": "Pop Kültür"
+  },
+  {
+    "id": 62,
+    "ifade": "Dünya'nın en büyük çölü Sahra Çölü'dür.",
+    "cevap": false,
+    "aciklama": "Dünya'nın en büyük çölü aslında Antarktika'dır; çöller yağış miktarına göre belirlenir.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 63,
+    "ifade": "Kedilerin tatlı duyusu yoktur.",
+    "cevap": true,
+    "aciklama": "Dillerinde şekerli tatları algılayan reseptörler bulunmaz, bu yüzden tatlıyı ayırt edemezler.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 64,
+    "ifade": "Tavşanlar havuç yemeyi her şeyden çok severler.",
+    "cevap": false,
+    "aciklama": "Havuç şekerlidir ve tavşanlar için ana besin değildir; asıl saman ve yeşil yaprak yemelidirler.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 65,
+    "ifade": "İnsan kemikleri çelikten daha güçlüdür.",
+    "cevap": true,
+    "aciklama": "Aynı ağırlıktaki kemik ve çelik kıyaslandığında, kemik basınç altında daha dayanıklıdır.",
+    "kategori": "İnsan Vücudu"
+  },
+  {
+    "id": 66,
+    "ifade": "Güneş'e en yakın gezegen en sıcak gezegendir.",
+    "cevap": false,
+    "aciklama": "Merkür yakındır ama atmosferi yoktur; Venüs sera etkisiyle daha sıcaktır.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 67,
+    "ifade": "Arıların 5 gözü vardır.",
+    "cevap": true,
+    "aciklama": "İki büyük bileşik gözün yanında, kafalarının üstünde ışığı algılayan 3 minik gözleri daha bulunur.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 68,
+    "ifade": "Muz aslında bir meyve değil bir ottur.",
+    "cevap": true,
+    "aciklama": "Muz bitkisi odunsu bir gövdeye sahip olmadığı için botanik olarak dev bir ot sayılır.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 69,
+    "ifade": "İpek böcekleri aslında böcek değil bir tırtıldır.",
+    "cevap": true,
+    "aciklama": "Güve haline gelmeden önceki tırtıl evrelerinde ipek üretirler.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 70,
+    "ifade": "Kıyamet günü sığınakları için Norveç'te bir tohum deposu vardır.",
+    "cevap": true,
+    "aciklama": "Svalbard Küresel Tohum Deposu, bitki çeşitliliğini korumak için inşa edilmiştir.",
+    "kategori": "Güncel"
+  },
+  {
+    "id": 71,
+    "ifade": "Kola içinde fare ölüsü çıktığı bir dönem gerçek olmuştur.",
+    "cevap": false,
+    "aciklama": "Bu markaları karalamak için uydurulmuş bir şehir efsanesidir.",
+    "kategori": "Pop Kültür"
+  },
+  {
+    "id": 72,
+    "ifade": "Sokrates'in yazılı hiçbir eseri günümüze ulaşmamıştır.",
+    "cevap": true,
+    "aciklama": "Sokrates hiçbir şey yazmamıştır; fikirlerini öğrencisi Platon'un yazılarından biliyoruz.",
+    "kategori": "Tarih"
+  },
+  {
+    "id": 73,
+    "ifade": "Marslı filmindeki Mars görüntüsü Ürdün'de çekilmiştir.",
+    "cevap": true,
+    "aciklama": "Wadi Rum çölü, kızıl kumları nedeniyle Mars temalı filmlerin popüler mekanıdır.",
+    "kategori": "Pop Kültür"
+  },
+  {
+    "id": 74,
+    "ifade": "Ay'da yürüyen ilk insan Neil Armstrong'dur.",
+    "cevap": true,
+    "aciklama": "1969 yılında Apollo 11 göreviyle bu tarihi adımı atmıştır.",
+    "kategori": "Tarih"
+  },
+  {
+    "id": 75,
+    "ifade": "Köpekler sadece siyah beyaz görür.",
+    "cevap": false,
+    "aciklama": "Sarı ve mavi tonlarını görebilirler; sadece kırmızı ve yeşili ayırt etmekte zorlanırlar.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 76,
+    "ifade": "Ispanak en çok demir içeren yiyecektir.",
+    "cevap": false,
+    "aciklama": "Bu inanış bir ondalık virgül hatasından kaynaklanmıştır; aslında kırmızı et ve mercimekte daha çok vardır.",
+    "kategori": "Güncel"
+  },
+  {
+    "id": 77,
+    "ifade": "Shrek karakteri gerçek bir insandan ilham alınmıştır.",
+    "cevap": true,
+    "aciklama": "Profesyonel güreşçi Maurice Tillet'in görünümünden esinlenildiği söylenmektedir.",
+    "kategori": "Pop Kültür"
+  },
+  {
+    "id": 78,
+    "ifade": "İnsanlar ve muzlar %50 oranında aynı DNA'ya sahiptir.",
+    "cevap": true,
+    "aciklama": "Temel hücre işlevleri benzer olduğu için şaşırtıcı ama gerçektir.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 79,
+    "ifade": "Eyfel Kulesi aslında Barcelona için tasarlanmıştı.",
+    "cevap": true,
+    "aciklama": "Barcelona şehri projeyi pahalı ve çirkin bulduğu için reddetmiştir.",
+    "kategori": "Tarih"
+  },
+  {
+    "id": 80,
+    "ifade": "Uydudan görülebilen tek insan yapısı Çin Seddi'dir.",
+    "cevap": false,
+    "aciklama": "Işıkları yanan şehirler, piramitler ve büyük barajlar da görülebilir.",
+    "kategori": "Güncel"
+  },
+  {
+    "id": 81,
+    "ifade": "İnsan gözü 576 megapiksel çözünürlüğe denktir.",
+    "cevap": true,
+    "aciklama": "Statik bir değer değil ama beynimizin birleştirdiği görüntü kabaca bu detaydadır.",
+    "kategori": "İnsan Vücudu"
+  },
+  {
+    "id": 82,
+    "ifade": "Dinozorlar ve insanlar aynı dönemde yaşamıştır.",
+    "cevap": false,
+    "aciklama": "Dinozorlar 65 milyon yıl önce yok oldu, ilk insanlar ise sadece birkaç milyon yıl önce ortaya çıktı.",
+    "kategori": "Tarih"
+  },
+  {
+    "id": 83,
+    "ifade": "Buzullar tatlı su depolarıdır.",
+    "cevap": true,
+    "aciklama": "Dünya'nın tatlı su rezervinin yaklaşık %70'i buzullarda donmuş haldedir.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 84,
+    "ifade": "Astroloji bilimsel bir gerçekliktir.",
+    "cevap": false,
+    "aciklama": "Astroloji bilimsel bir temele dayanmaz, popüler bir inanç sistemidir.",
+    "kategori": "Güncel"
+  },
+  {
+    "id": 85,
+    "ifade": "İsviçre'nin resmi bir başkenti yoktur.",
+    "cevap": true,
+    "aciklama": "Bern 'federal şehir' statüsündedir ama yasada başkent olarak belirtilmemiştir.",
+    "kategori": "Tarih"
+  },
+  {
+    "id": 86,
+    "ifade": "Sineklerin ömrü sadece 24 saattir.",
+    "cevap": false,
+    "aciklama": "Ev sinekleri uygun koşullarda 15 ile 30 gün arasında yaşayabilirler.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 87,
+    "ifade": "Beyin vücuttaki oksijenin %20'sini kullanır.",
+    "cevap": true,
+    "aciklama": "Vücut ağırlığının %2'si olmasına rağmen enerjinin ve oksijenin beşte birini beyin harcar.",
+    "kategori": "İnsan Vücudu"
+  },
+  {
+    "id": 88,
+    "ifade": "Ay'da koku vardır.",
+    "cevap": true,
+    "aciklama": "Astronotlar Ay tozunun barut gibi koktuğunu tarif etmişlerdir.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 89,
+    "ifade": "Dünya'da yaşayan insan sayısı, ölenlerden fazladır.",
+    "cevap": false,
+    "aciklama": "Şimdiye kadar yaşamış yaklaşık 100 milyar insan varken şu an 8 milyar insan yaşamaktadır.",
+    "kategori": "Güncel"
+  },
+  {
+    "id": 90,
+    "ifade": "Yılanların dış kulakları yoktur.",
+    "cevap": true,
+    "aciklama": "Dış kulakları yoktur ama kafatası içindeki kemiklerle yerdeki titreşimleri duyabilirler.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 91,
+    "ifade": "Winston Churchill Nobel Edebiyat Ödülü almıştır.",
+    "cevap": true,
+    "aciklama": "1953 yılında biyografi ve tarih yazılarıyla Edebiyat ödülünü almıştır.",
+    "kategori": "Tarih"
+  },
+  {
+    "id": 92,
+    "ifade": "Kızılötesi ışığı gözle görebiliriz.",
+    "cevap": false,
+    "aciklama": "İnsan gözü görünür ışik spektrumunu görür, kızılötesi bu sınırın dışındadır.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 93,
+    "ifade": "En çok ülke ile sınırı olan ülke Çin'dir.",
+    "cevap": true,
+    "aciklama": "Çin ve Rusya 14'er ülke ile en çok komşusu olan ülkelerdir.",
+    "kategori": "Güncel"
+  },
+  {
+    "id": 94,
+    "ifade": "Sıcak su soğuk sudan daha hızlı donabilir.",
+    "cevap": true,
+    "aciklama": "Mpemba etkisi olarak bilinen bu durum belirli koşullar altında gerçekleşebilir.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 95,
+    "ifade": "Aynalar ışığı %100 yansıtır.",
+    "cevap": false,
+    "aciklama": "Çoğu ayna ışığın bir kısmını emer veya dağıtır, yansıtma oranı %90-95 civarındadır.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 96,
+    "ifade": "Atlar ayakta uyuyabilirler.",
+    "cevap": true,
+    "aciklama": "Bacaklarındaki kilit mekanizması sayesinde devrilmeden şekerleme yapabilirler.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 97,
+    "ifade": "İlk cep telefonu görüşmesi 1973'te yapıldı.",
+    "cevap": true,
+    "aciklama": "Motorola mühendisi Martin Cooper rakip firmayı arayarak ilk görüşmeyi gerçekleştirdi.",
+    "kategori": "Tarih"
+  },
+  {
+    "id": 98,
+    "ifade": "Van Gogh kulağının tamamını kesmiştir.",
+    "cevap": false,
+    "aciklama": "Sadece sol kulak memesinin bir kısmını kestiği düşünülmektedir.",
+    "kategori": "Tarih"
+  },
+  {
+    "id": 99,
+    "ifade": "Netflix'in ilk işi posta ile DVD kiralamaktı.",
+    "cevap": true,
+    "aciklama": "1997'de bir film kiralama servisi olarak başladı, dijital yayına çok sonra geçti.",
+    "kategori": "Pop Kültür"
+  },
+  {
+    "id": 100,
+    "ifade": "Ekvator'da yerçekimi daha azdır.",
+    "cevap": true,
+    "aciklama": "Dünya'nın merkezinden daha uzak olunduğu için yerçekimi kutuplara göre biraz daha zayıftır.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 101,
+    "ifade": "Dünyanın en derin noktası Mariana Çukuru'dur.",
+    "cevap": true,
+    "aciklama": "Batı Pasifik Okyanusu'nda bulunur ve yaklaşık 11.000 metre derinliğindedir.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 102,
+    "ifade": "İnsan kemiklerinin yarısından fazlası ellerde ve ayaklarda bulunur.",
+    "cevap": true,
+    "aciklama": "İnsan vücudundaki 206 kemiğin 106'sı el ve ayaklarda yer alır.",
+    "kategori": "İnsan Vücudu"
+  },
+  {
+    "id": 103,
+    "ifade": "Kediler hayatlarının yaklaşık %70'ini uyuyarak geçirirler.",
+    "cevap": true,
+    "aciklama": "Günde ortalama 13-16 saat uyuyan kediler için bu oldukça normal bir orandır.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 104,
+    "ifade": "Leonardo da Vinci aynı anda bir eliyle yazı yazıp diğeriyle resim yapabiliyordu.",
+    "cevap": true,
+    "aciklama": "Da Vinci'nin bu inanılmaz beyin kapasitesine ve 'ayna yazısı' yeteneğine sahip olduğu bilinmektedir.",
+    "kategori": "Tarih"
+  },
+  {
+    "id": 105,
+    "ifade": "Satürn gezegeni sudan daha az yoğundur.",
+    "cevap": true,
+    "aciklama": "Satürn'ü içine alacak kadar büyük bir okyanus olsaydı, gezegen suyun üzerinde yüzerdi.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 106,
+    "ifade": "Dünyanın en büyük şelalesi okyanusun altındadır.",
+    "cevap": true,
+    "aciklama": "Danimarka Boğazı'ndaki su altı şelalesi, karadaki en büyük şelaleden çok daha fazla su taşır.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 107,
+    "ifade": "Bebekler diz kapakları olmadan doğarlar.",
+    "cevap": true,
+    "aciklama": "Bebeklerin diz kapakları doğuştan vardır ama kemik değil, yumuşak kıkırdak yapısındadır; 3-5 yaş arası kemikleşir.",
+    "kategori": "İnsan Vücudu"
+  },
+  {
+    "id": 108,
+    "ifade": "Arılar birbirleriyle dans ederek iletişim kurarlar.",
+    "cevap": true,
+    "aciklama": "'Waggle dance' adı verilen bu hareketlerle diğer arılara yiyeceğin yerini ve uzaklığını tarif ederler.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 109,
+    "ifade": "Eyfel Kulesi her yıl binlerce kez yıldırım darbesi alır.",
+    "cevap": false,
+    "aciklama": "Kule yılda ortalama 10 kez yıldırım darbesi alır; ancak paratoner sistemi sayesinde zarar görmez.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 110,
+    "ifade": "Dünya üzerindeki tüm altınların çoğu okyanus tabanındadır.",
+    "cevap": true,
+    "aciklama": "Tahminlere göre okyanus suyunda ve tabanında henüz çıkarılmamış yaklaşık 20 milyon ton altın bulunmaktadır.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 111,
+    "ifade": "Karıncaların akciğerleri yoktur.",
+    "cevap": true,
+    "aciklama": "Vücutlarındaki minik delikler (stigma) aracılığıyla doğrudan havayı içlerine çekerek nefes alırlar.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 112,
+    "ifade": "Güneş Sistemindeki en yüksek dağ Mars'tadır.",
+    "cevap": true,
+    "aciklama": "Olympus Mons, 22 kilometre yüksekliğiyle Everest'ten yaklaşık 3 kat daha büyüktür.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 113,
+    "ifade": "İnsanların parmak izleri gibi dil izleri de benzersizdir.",
+    "cevap": true,
+    "aciklama": "Dilın üzerindeki desen ve kabartmalar her insanda farklılık gösterir.",
+    "kategori": "İnsan Vücudu"
+  },
+  {
+    "id": 114,
+    "ifade": "Zürafaların dili mavidir.",
+    "cevap": true,
+    "aciklama": "Dilleri yaklaşık 50 cm uzunluğundadır ve güneşten yanmamak için koyu mavi/mor bir renge sahiptir.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 115,
+    "ifade": "Büyük Patlama (Big Bang) sırasında ses çıkmıştır.",
+    "cevap": false,
+    "aciklama": "Ses yayılmak için bir ortama (hava gibi) ihtiyaç duyar; Büyük Patlama'dan önce boşluk olduğu için ses oluşamazdı.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 116,
+    "ifade": "Panda yavruları doğduklarında bir fareden daha küçüktür.",
+    "cevap": true,
+    "aciklama": "Yeni doğan bir panda yaklaşık 100 gram ağırlığındadır ve oldukça savunmasızdır.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 117,
+    "ifade": "Köpekbalıkları kanser olmazlar.",
+    "cevap": false,
+    "aciklama": "Bu yaygın bir yanlıştır; köpekbalıklarının da çeşitli tümörler geliştirdiği gözlemlenmiştir.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 118,
+    "ifade": "Dünya'nın dönme hızı yavaşlamaktadır.",
+    "cevap": true,
+    "aciklama": "Ay'ın çekim gücü etkisiyle Dünya'nın dönüş hızı her yüzyılda milisaniyeler düzeyinde yavaşlar.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 119,
+    "ifade": "Vücudumuzdaki en sert madde diş minesidir.",
+    "cevap": true,
+    "aciklama": "Diş minesi, içindeki yüksek mineral oranı sayesinde kemiklerden bile daha serttir.",
+    "kategori": "İnsan Vücudu"
+  },
+  {
+    "id": 120,
+    "ifade": "Ahtapotların kanı mavidir.",
+    "cevap": true,
+    "aciklama": "Kanlarında demir yerine bakır içeren hemosiyanin maddesi olduğu için kanları mavidir.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 121,
+    "ifade": "Elmaslar kömürün yüksek basınç altında kalmasıyla oluşur.",
+    "cevap": false,
+    "aciklama": "Elmaslar kömürden değil, yerin çok derinlerindeki karbonun kristalleşmesiyle oluşur.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 122,
+    "ifade": "Sıcak su, soğuk sudan daha ağırdır.",
+    "cevap": false,
+    "aciklama": "Sıcak su genleştiği için hacmi artar ve yoğunluğu azalır, dolayısıyla daha hafiftir.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 123,
+    "ifade": "Dünya'nın atmosferinin büyük çoğunluğu oksijendir.",
+    "cevap": false,
+    "aciklama": "Atmosferin %78'i azot (nitrojen), sadece %21'i oksijendir.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 124,
+    "ifade": "İnsanlar uyurken koku alamazlar.",
+    "cevap": true,
+    "aciklama": "Derin uyku sırasında koku duyusu beyin tarafından baskılanır; yangınlarda dumanın fark edilememesi bu yüzdendir.",
+    "kategori": "İnsan Vücudu"
+  },
+  {
+    "id": 125,
+    "ifade": "Güneş Sistemi'ndeki en büyük gezegen Satürn'dür.",
+    "cevap": false,
+    "aciklama": "Jüpiter, Satürn'den çok daha büyük bir hacme sahiptir.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 126,
+    "ifade": "İskenderiye Kütüphanesi bir gecede yanıp kül olmuştur.",
+    "cevap": false,
+    "aciklama": "Kütüphane yüzyıllar içinde gerçekleşen saldırılar, yangınlar ve bakımsızlık nedeniyle yavaş yavaş yok olmuştur.",
+    "kategori": "Tarih"
+  },
+  {
+    "id": 127,
+    "ifade": "Vücudumuzdaki kanın toplam ağırlığı vücut ağırlığımızın %8'idir.",
+    "cevap": true,
+    "aciklama": "Ortalama bir yetişkinde 4.5 - 5.5 litre kan bulunur, bu da bu orana denk gelir.",
+    "kategori": "İnsan Vücudu"
+  },
+  {
+    "id": 128,
+    "ifade": "Ay'ın yüzeyinde rüzgar vardır.",
+    "cevap": false,
+    "aciklama": "Ay'da atmosfer olmadığı için rüzgar oluşması imkansızdır; Armstrong'un bayrağı sadece yerleştirilme etkisiyle dalgalanmıştır.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 129,
+    "ifade": "Arılar ultra-viyole ışığı görebilirler.",
+    "cevap": true,
+    "aciklama": "Bu yetenekleri sayesinde çiçeklerin üzerindeki insanların göremediği desenleri fark edip nektarı bulurlar.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 130,
+    "ifade": "Meksika Körfezi, dünyanın en büyük körfezidir.",
+    "cevap": true,
+    "aciklama": "Geniş bir alana yayılan bu körfez, coğrafi olarak devasa bir büyüklüğe sahiptir.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 131,
+    "ifade": "İlk metro hattı Londra'da açılmıştır.",
+    "cevap": true,
+    "aciklama": "Londra Metrosu (The Tube), 1863 yılında hizmete girerek dünyanın ilk yer altı tren hattı olmuştur.",
+    "kategori": "Tarih"
+  },
+  {
+    "id": 132,
+    "ifade": "Kelebeklerin tat alma organları ayaklarındadır.",
+    "cevap": true,
+    "aciklama": "Hangi bitkinin üzerine yumurta bırakacaklarını anlamak için ayaklarıyla bitkinin tadına bakarlar.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 133,
+    "ifade": "Yıldırımlar her zaman yukarıdan aşağıya doğru düşer.",
+    "cevap": false,
+    "aciklama": "Yıldırım enerjisi bazen yerden buluta doğru (ters yönlü) da hareket edebilir.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 134,
+    "ifade": "En uzun yaşayan canlı türü bir kaplumbağadır.",
+    "cevap": false,
+    "aciklama": "'Turritopsis dohrnii' adlı denizanası türü, hücrelerini yenileyerek teorik olarak sonsuza kadar yaşayabilir.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 135,
+    "ifade": "İmparator penguenler dondurucu soğukta yumurtalarını ayaklarının üzerinde taşırlar.",
+    "cevap": true,
+    "aciklama": "Yumurtanın buzla temas etmemesi için karınlarındaki sıcak deri tabakasının altında tutarlar.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 136,
+    "ifade": "Sahra Çölü eskiden ormanlıktı.",
+    "cevap": true,
+    "aciklama": "Yaklaşık 6.000 yıl önce Sahra bölgesi yemyeşil, göllerle ve ormanlarla kaplı bir yerdi.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 137,
+    "ifade": "Gökkuşağı aslında tam bir dairedir.",
+    "cevap": true,
+    "aciklama": "Yerden bakıldığında yarım ay görünür ama uçak gibi yüksek yerlerden bakıldığında tam bir daire olduğu görülür.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 138,
+    "ifade": "Kangurular geri geri yürüyemezler.",
+    "cevap": true,
+    "aciklama": "Güçlü kuyrukları ve bacak yapısı sadece ileri doğru sıçramalarına izin verir.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 139,
+    "ifade": "Sarımsak yemek sivrisinekleri uzak tutar.",
+    "cevap": false,
+    "aciklama": "Bilimsel araştırmalar, sarımsak yemenin sivrisinek saldırıları üzerinde bir etkisi olmadığını göstermiştir.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 140,
+    "ifade": "Domuzlar gökyüzüne bakamazlar.",
+    "cevap": true,
+    "aciklama": "Boyun kaslarının ve omurgalarının yapısı, kafalarını yukarı kaldırıp gökyüzünü görmelerini engeller.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 141,
+    "ifade": "Dünyadaki en eski üniversite İtalya'dadır.",
+    "cevap": false,
+    "aciklama": "Fas'ın Fes şehrindeki Al-Qarawiyyin Üniversitesi (859), sürekli eğitim veren en eski kurumdur.",
+    "kategori": "Tarih"
+  },
+  {
+    "id": 142,
+    "ifade": "Mavi balinaların kalbi bir araba büyüklüğündedir.",
+    "cevap": true,
+    "aciklama": "O kadar büyüktür ki, ana damarlarının içinde bir insan rahatlıkla yüzebilir.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 143,
+    "ifade": "Filler zıplayamayan tek memeli hayvanlardır.",
+    "cevap": true,
+    "aciklama": "Deasa ağırlıkları ve bacak kemik yapısı, dört ayağının birden yerden kesilmesine izin vermez.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 144,
+    "ifade": "Parmak uçlarımız suyun içinde büzüştüğünde bu bir emilim değil, sinir sistemi tepkisidir.",
+    "cevap": true,
+    "aciklama": "Beyin, ıslak nesneleri daha iyi kavrayabilmemiz için parmak uçlarını otomatik olarak pürüzlü hale getirir.",
+    "kategori": "İnsan Vücudu"
+  },
+  {
+    "id": 145,
+    "ifade": "Güneş Sistemi'ndeki en hızlı esen rüzgarlar Neptün'dedir.",
+    "cevap": true,
+    "aciklama": "Neptün'deki fırtınalarda rüzgar hızı saatte 2.000 kilometreyi aşabilir.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 146,
+    "ifade": "Atatürk'ün en sevdiği yemek kuru fasulye - pilavdır.",
+    "cevap": true,
+    "aciklama": "Mütevazı sofrasında bu ikiliyi sık sık tercih ettiği bilinmektedir.",
+    "kategori": "Tarih"
+  },
+  {
+    "id": 147,
+    "ifade": "Baykuşlar gözlerini hareket ettiremezler.",
+    "cevap": true,
+    "aciklama": "Gözleri kafatasına sabitlenmiştir, bu yüzden çevrelerini görmek için kafalarını 270 derece döndürürler.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 148,
+    "ifade": "Köpeklerin koku alma duyusu insanlarınkinden 40 kat daha fazladır.",
+    "cevap": true,
+    "aciklama": "Beyinlerinde kokuyu işleyen bölüm, insanlarınkine göre çok daha büyüktür.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 149,
+    "ifade": "İnci aslında bir istiridyenin savunma mekanizmasıdır.",
+    "cevap": true,
+    "aciklama": "İstiridye içine giren kum gibi yabancı cisimleri sedefle kaplayarak kendisini korumaya çalışır.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 150,
+    "ifade": "Piramitler inşa edilirken mamutlar henüz yok olmamıştı.",
+    "cevap": true,
+    "aciklama": "Mısır piramitleri yapılırken Wrangel Adası'ndaki son mamut topluluğu hala hayattaydı.",
+    "kategori": "Tarih"
+  },
+  {
+    "id": 151,
+    "ifade": "Dünya'nın en büyük adası Grönland'dır.",
+    "cevap": true,
+    "aciklama": "Avustralya bir kıta olarak kabul edildiği için, Grönland dünyanın en büyük adasıdır.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 152,
+    "ifade": "Işık, bir saniyede Dünya'nın etrafını yaklaşık 7.5 kez tur atabilir.",
+    "cevap": true,
+    "aciklama": "Işık hızı saniyede ~300.000 km'dir ve Dünya'nın çevresi ~40.000 km'dir.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 153,
+    "ifade": "Timsahlar dillerini dışarı çıkaramazlar.",
+    "cevap": true,
+    "aciklama": "Dilleri ağızlarının alt kısmına bir zarla yapışık durumdadır, bu yüzden dışarı uzatamazlar.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 154,
+    "ifade": "İnsan yapımı her şey uzaydan görülebilir.",
+    "cevap": false,
+    "aciklama": "Uzaydan sadece çok büyük yapılar (barajlar, şehir ışıkları vb.) görülebilir; her şey görülemez.",
+    "kategori": "Güncel"
+  },
+  {
+    "id": 155,
+    "ifade": "Bir gün 24 saatten tam olarak birkaç saniye daha azdır.",
+    "cevap": true,
+    "aciklama": "Dünya'nın kendi ekseni etrafında dönmesi tam olarak 23 saat 56 dakika 4 saniye sürer.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 156,
+    "ifade": "Ay'ın yüzeyindeki ayak izleri milyonlarca yıl silinmeden kalabilir.",
+    "cevap": true,
+    "aciklama": "Ay'da rüzgar ve su (atmosfer) olmadığı için erozyon yok denecek kadar azdır.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 157,
+    "ifade": "Her insanın dil izi parmak izi gibi eşsizdir.",
+    "cevap": true,
+    "aciklama": "Dilin anatomik yapısı ve üzerindeki tomurcuk dağılımı kişiye özeldir.",
+    "kategori": "İnsan Vücudu"
+  },
+  {
+    "id": 158,
+    "ifade": "Deve kuşlarının gözu beyinlerinden daha büyüktür.",
+    "cevap": true,
+    "aciklama": "Gözleri bir tenis topu büyüklüğündedir, bu da beyin hacminden fazladır.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 159,
+    "ifade": "Altın, bütün kıtalarda bulunan tek metaldir.",
+    "cevap": true,
+    "aciklama": "Antarktika dahil olmak üzere her kıtanın yer kabuğunda altın mevcuttur.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 160,
+    "ifade": "Karıncalar uyumazlar.",
+    "cevap": false,
+    "aciklama": "Karıncalar gün içinde yüzlerce kez 1-2 dakikalık kısa şekerlemeler yaparlar.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 161,
+    "ifade": "Venüs'te güneş batıdan doğar.",
+    "cevap": true,
+    "aciklama": "Venüs diğer gezegenlerin tersi yönünde döndüğü için güneş batıdan doğar, doğudan batar.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 162,
+    "ifade": "İnsan vücudundaki bakterilerin ağırlığı yaklaşık 2 kilogramdır.",
+    "cevap": true,
+    "aciklama": "Bağırsaklarımızda ve cildimizde yaşayan trilyonlarca mikrop bu ağırlığa ulaşır.",
+    "kategori": "İnsan Vücudu"
+  },
+  {
+    "id": 163,
+    "ifade": "Kibrit, çakmaktan sonra icat edilmiştir.",
+    "cevap": true,
+    "aciklama": "Çakmak 1823, sürtünme kibriti 1826'da icat edildi.",
+    "kategori": "Tarih"
+  },
+  {
+    "id": 164,
+    "ifade": "Zürafaların ses telleri yoktur.",
+    "cevap": false,
+    "aciklama": "Ses telleri vardır ancak nadiren ses çıkarırlar; genelde infrasonik iletişim kurarlar.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 165,
+    "ifade": "Dünya'nın en sıcak yeri Libya'daki El Aziziye kasabasıdır.",
+    "cevap": false,
+    "aciklama": "En sıcak yer olarak Ölüm Vadisi (Death Valley, ABD) tescil edilmiştir.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 166,
+    "ifade": "Kuşlar aslında yaşayan dinozorlardır.",
+    "cevap": true,
+    "aciklama": "Bilimsel olarak kuşlar, theropod dinozorlarının hayatta kalan tek soyundandır.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 167,
+    "ifade": "Titanik batarken orkestra çalmaya devam etmiştir.",
+    "cevap": true,
+    "aciklama": "Kurtulan yolcuların ifadelerine göre grup, panik havasını yatıştırmak için son ana kadar çalmıştır.",
+    "kategori": "Tarih"
+  },
+  {
+    "id": 168,
+    "ifade": "Su altında nefesinizi tutarken konuşabilirsiniz.",
+    "cevap": false,
+    "aciklama": "Ses telleri titreşmek için hava akışına ihtiyaç duyar, su altında bu mümkün değildir.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 169,
+    "ifade": "Mavi balina yavruları günde 400 litre süt içer.",
+    "cevap": true,
+    "aciklama": "Günde yaklaşık 90 kilo alarak çok hızlı büyürler.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 170,
+    "ifade": "Einstein İsviçre patent ofisinde çalışmıştır.",
+    "cevap": true,
+    "aciklama": "En önemli teorilerini patent ofisinde boş zamanlarında çalışırken geliştirmiştir.",
+    "kategori": "Tarih"
+  },
+  {
+    "id": 171,
+    "ifade": "Çilek aslında bir orman meyvesi (berry) değildir.",
+    "cevap": true,
+    "aciklama": "Botanik tanıma göre çilek 'berry' sayılmaz, ancak muz ve karpuz sayılır.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 172,
+    "ifade": "İnsan burnu 1 trilyondan fazla farklı kokuyu ayırt edebilir.",
+    "cevap": true,
+    "aciklama": "Modern araştırmalar kapasitemizin çok büyük olduğunu ispatlamıştır.",
+    "kategori": "İnsan Vücudu"
+  },
+  {
+    "id": 173,
+    "ifade": "Ay Dünya'dan her yıl 3.8 cm uzaklaşmaktadır.",
+    "cevap": true,
+    "aciklama": "Lazer ölçümleriyle Ay'ın yavaş yavaş bizden uzaklaştığı doğrulanmıştır.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 174,
+    "ifade": "Vikingler Amerikaya Kristof Kolomb'dan önce ulaşmıştır.",
+    "cevap": true,
+    "aciklama": "Leif Erikson liderliğindeki Vikinglerin Kolomb'dan 500 yıl önce ulaştığı kanıtlanmıştır.",
+    "kategori": "Tarih"
+  },
+  {
+    "id": 175,
+    "ifade": "Karpuzun %92'si sudur.",
+    "cevap": true,
+    "aciklama": "Bu yüksek su oranı onu mükemmel bir yaz meyvesi yapar.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 176,
+    "ifade": "Yerçekimi olmayan bir ortamda ağlayamazsınız.",
+    "cevap": true,
+    "aciklama": "Gözyaşları oluşur ama süzülmez; gözün etrafında birikir.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 177,
+    "ifade": "Sokrates'in baldıran zehri içerek idam edildiği söylenir.",
+    "cevap": true,
+    "aciklama": "İnançları nedeniyle ölüme mahkum edilmiş ve kendi elleriyle zehri içmiştir.",
+    "kategori": "Tarih"
+  },
+  {
+    "id": 178,
+    "ifade": "Bir şimşek çakması Güneş yüzeyinden 5 kat daha sıcaktır.",
+    "cevap": true,
+    "aciklama": "Şimşek 30.000 Kelvin'e ulaşabilirken Güneş yüzeyi 6.000 Kelvin civarındadır.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 179,
+    "ifade": "Bermuda Şeytan Üçgeni'nde kaybolan gemi sayısı diğer yerlerden fazladır.",
+    "cevap": false,
+    "aciklama": "İstatistikler bu bölgedeki kazaların diğer yoğun trafikli bölgelerle aynı olduğunu göstermektedir.",
+    "kategori": "Pop Kültür"
+  },
+  {
+    "id": 180,
+    "ifade": "Tırnaklar elimizi korumak için tasarlanmış pençelerin kalıntısıdır.",
+    "cevap": true,
+    "aciklama": "Evrimsel süreçte primatlarda pençeler düz tırnaklara dönüşmüştür.",
+    "kategori": "İnsan Vücudu"
+  },
+  {
+    "id": 181,
+    "ifade": "Keşişlerin kahveyi keşfetmesinde keçilerin rolü vardır.",
+    "cevap": true,
+    "aciklama": "Efsaneye göre Etiyopyalı bir çoban, keçilerinin kahve meyvesi yedikten sonra enerjik olduğunu fark etmiştir.",
+    "kategori": "Tarih"
+  },
+  {
+    "id": 182,
+    "ifade": "Bütün ahtapot türleri zehirlidir.",
+    "cevap": true,
+    "aciklama": "Çoğu insan için zararsız olsa da tüm ahtapotlarda avlarını felç etmek için zehir bulunur.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 183,
+    "ifade": "Dünya üzerindeki suyun sadece %1'i içilebilir.",
+    "cevap": true,
+    "aciklama": "%97'si tuzlu, %2'si buzullardadır; kalan %1 göl ve nehirlerdedir.",
+    "kategori": "Güncel"
+  },
+  {
+    "id": 184,
+    "ifade": "Kelebeklerin ömrü sadece bir gündür.",
+    "cevap": false,
+    "aciklama": "Çoğu kelebek türü birkaç haftadan birkaç aya kadar yaşayabilir.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 185,
+    "ifade": "Plüton artık bir gezegen olarak kabul edilmiyor.",
+    "cevap": true,
+    "aciklama": "2006 yılında 'cüce gezegen' sınıfına düşürülmüştür.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 186,
+    "ifade": "Uçaklardaki karakutular aslında turuncu renktedir.",
+    "cevap": true,
+    "aciklama": "Enkaz altında daha kolay bulunabilmeleri için parlak turuncu renge boyanırlar.",
+    "kategori": "Pop Kültür"
+  },
+  {
+    "id": 187,
+    "ifade": "Yıldızlar gündüzleri de gökyüzündedir.",
+    "cevap": true,
+    "aciklama": "Sadece güneş ışığı atmosferde yayıldığı için onları göremeyiz.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 188,
+    "ifade": "Atatürk 1934 yılında Nobel Barış Ödülü'ne aday gösterilmiştir.",
+    "cevap": true,
+    "aciklama": "Yunanistan Başbakanı Venizelos tarafından bu ödüle aday gösterilmiştir.",
+    "kategori": "Tarih"
+  },
+  {
+    "id": 189,
+    "ifade": "Kalp krizi geçiren birinin öksürmesi hayatını kurtarabilir.",
+    "cevap": false,
+    "aciklama": "Bu tıbbi olarak doğrulanmış bir yöntem değildir.",
+    "kategori": "İnsan Vücudu"
+  },
+  {
+    "id": 190,
+    "ifade": "Örümcekler aslında böcek değildir.",
+    "cevap": true,
+    "aciklama": "Örümcekler arachnid sınıfındandır ve 8 bacaklıdırlar.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 191,
+    "ifade": "Dünya'nın çekirdeği tamamen sıvı haldedir.",
+    "cevap": false,
+    "aciklama": "İç çekirdek aşırı basınç nedeniyle katıdır.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 192,
+    "ifade": "Mozart 5 yaşında ilk bestesini yapmıştır.",
+    "cevap": true,
+    "aciklama": "Dahi bir çocuk olarak çok erken yaşta müzik yeteneğini göstermiştir.",
+    "kategori": "Tarih"
+  },
+  {
+    "id": 193,
+    "ifade": "Mıknatıslar tüm metalleri çeker.",
+    "cevap": false,
+    "aciklama": "Altın veya gümüşü çekmez; demir, nikel ve kobalt gibi metalleri çeker.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 194,
+    "ifade": "İnsan beyni geceleri gündüzden daha aktiftir.",
+    "cevap": true,
+    "aciklama": "Uyku sırasında bilgileri işlerken beyin yoğun faaliyet gösterir.",
+    "kategori": "İnsan Vücudu"
+  },
+  {
+    "id": 195,
+    "ifade": "Arktik, Kuzey Kutbu'nu ifade eder.",
+    "cevap": true,
+    "aciklama": "Yunanca 'arktos' (ayı) kelimesinden gelir.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 196,
+    "ifade": "Fırtınadan önce gelen sessizlik gerçek bir meteorolojik olaydır.",
+    "cevap": true,
+    "aciklama": "Düşük basınçlı sistemler bazen çevredeki havayı çekerek durgunluk yaratabilir.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 197,
+    "ifade": "Karanlıkta kitap okumak gözleri kalıcı olarak bozar.",
+    "cevap": false,
+    "aciklama": "Gözleri yorar ama kalıcı hasar yaratmaz.",
+    "kategori": "İnsan Vücudu"
+  },
+  {
+    "id": 198,
+    "ifade": "Zürafalar dilleriyle kulaklarını temizleyebilirler.",
+    "cevap": true,
+    "aciklama": "50 cm'lik dilleriyle kulaklarına ulaşabilirler.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 199,
+    "ifade": "Napoleon'un ordusu piramitleri hedef talimi için kullanmıştır.",
+    "cevap": false,
+    "aciklama": "Sfenks'in burnunun kırılmasından Napoleon sorumlu değildir.",
+    "kategori": "Tarih"
+  },
+  {
+    "id": 200,
+    "ifade": "Balinalar balıktır.",
+    "cevap": false,
+    "aciklama": "Balinalar memeli hayvanlardır; akciğerleriyle nefes alırlar.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 201,
+    "ifade": "Ahtapot mürekkebi geçici körlük yapabilir.",
+    "cevap": true,
+    "aciklama": "Mürekkebin içindeki enzimler avcıların koku ve görme duyularını geçici olarak etkileyebilir.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 202,
+    "ifade": "Jüpiter'in içine tüm gezegenler sığabilir.",
+    "cevap": true,
+    "aciklama": "Jüpiter o kadar büyüktür ki Güneş Sistemi'ndeki diğer tüm gezegenlerin toplam hacminden iki kat büyüktür.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 203,
+    "ifade": "Yıldırımlar dünyaya her saniye 100 kez düşer.",
+    "cevap": true,
+    "aciklama": "Dünya genelinde her saniye ortalama 100 yıldırım çakması meydana gelir.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 204,
+    "ifade": "Çay ve kahve su kaybına (dehidrasyon) neden olur.",
+    "cevap": false,
+    "aciklama": "Düzenli tüketenlerde bu içeceklerin diüretik etkisi düşüktür ve vücudun su ihtiyacına katkı sağlarlar.",
+    "kategori": "Güncel"
+  },
+  {
+    "id": 205,
+    "ifade": "Ay'da rüzgar olmadığı için bayrak dalgalanamaz.",
+    "cevap": true,
+    "aciklama": "Görüntülerdeki dalgalanma bayrağı dikerken oluşan titreşimden veya özel destek çubuğundan kaynaklanır.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 206,
+    "ifade": "Kedilerin kemik sayısı insanlardan fazladır.",
+    "cevap": true,
+    "aciklama": "Kedilerde yaklaşık 230 kemik varken insanlarda 206 kemik bulunur.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 207,
+    "ifade": "Su uyuduğu söylenir ama akmayan su aslında kirlenir.",
+    "cevap": true,
+    "aciklama": "Durgun su bakterilerin üremesi için elverişli bir ortamdır.",
+    "kategori": "Pop Kültür"
+  },
+  {
+    "id": 208,
+    "ifade": "Karıncaların lideri olan bir kraliçe arısı vardır.",
+    "cevap": false,
+    "aciklama": "Karıncaların kraliçesi vardır ama karıncalar arı değildir.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 209,
+    "ifade": "İstanbul iki kıta üzerine kurulu dünyadaki tek şehirdir.",
+    "cevap": false,
+    "aciklama": "Mısır'daki Kahire ve Rusya'daki Magnitogorsk gibi başka şehirler de iki kıtaya yayılmıştır.",
+    "kategori": "Tarih"
+  },
+  {
+    "id": 210,
+    "ifade": "İnsan midesi çelik jiletleri eritecek kadar asidiktir.",
+    "cevap": true,
+    "aciklama": "Mide asidinin pH'ı 1-2 arasındadır ve metali aşındırabilir.",
+    "kategori": "İnsan Vücudu"
+  },
+  {
+    "id": 211,
+    "ifade": "Zürafalar dilleriyle kulaklarını temizleyebilirler.",
+    "cevap": true,
+    "aciklama": "50 cm uzunluğundaki dilleriyle kulak içlerini temizleyebilirler.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 212,
+    "ifade": "Sağ elini kullanan insanlar ortalama 9 yıl daha uzun yaşar.",
+    "cevap": false,
+    "aciklama": "Bu bilimsel olarak doğrulanmamıştır.",
+    "kategori": "Pop Kültür"
+  },
+  {
+    "id": 213,
+    "ifade": "Güneş yanığı aslında hücrelerin intihar etmesidir.",
+    "cevap": true,
+    "aciklama": "DNA'sı hasar gören hücreler kanserleşmemek için kendilerini yok ederler.",
+    "kategori": "İnsan Vücudu"
+  },
+  {
+    "id": 214,
+    "ifade": "Bal bozulmayan tek gıdadır.",
+    "cevap": true,
+    "aciklama": "3000 yıllık piramitlerde bulunan balların hala yenilebilir olduğu görülmüştür.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 215,
+    "ifade": "Domates aslında bir meyvedir.",
+    "cevap": true,
+    "aciklama": "Botanik olarak çekirdekli olduğu için meyve sınıfındadır.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 216,
+    "ifade": "Bebekler diz kapaksız doğarlar.",
+    "cevap": true,
+    "aciklama": "Diz kapakları vardır ama kıkırdak halindedir; 3-5 yaşında kemikleşir.",
+    "kategori": "İnsan Vücudu"
+  },
+  {
+    "id": 217,
+    "ifade": "Ahtapotların üç kalbi vardır.",
+    "cevap": true,
+    "aciklama": "İkisi solungaçlara, biri vücuda kan pompalar.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 218,
+    "ifade": "Einstein okulda matematikten kalmıştır.",
+    "cevap": false,
+    "aciklama": "Aksine matematik ve fizikte dahi bir öğrenciydi.",
+    "kategori": "Tarih"
+  },
+  {
+    "id": 219,
+    "ifade": "Köpekler siyah beyaz görür.",
+    "cevap": false,
+    "aciklama": "Mavi ve sarı tonlarını görebilirler.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 220,
+    "ifade": "Everest Dağı dünyanın en yüksek zirvesidir.",
+    "cevap": true,
+    "aciklama": "Deniz seviyesinden ölçüldüğünde 8.848 metre ile en yüksektir.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 221,
+    "ifade": "Işık boşlukta da yayılır.",
+    "cevap": true,
+    "aciklama": "Işık elektromanyetik bir dalgadır ve maddesel ortama ihtiyaç duymaz.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 222,
+    "ifade": "Su 100 derecede kaynar.",
+    "cevap": true,
+    "aciklama": "Deniz seviyesinde bu sıcaklıkta kaynama gerçekleşir.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 223,
+    "ifade": "İnsan vücudundaki en uzun kemik uyluk kemiğidir.",
+    "cevap": true,
+    "aciklama": "Femur olarak da bilinen bu kemik en uzun ve en güçlüdür.",
+    "kategori": "İnsan Vücudu"
+  },
+  {
+    "id": 224,
+    "ifade": "Dünya düzdür.",
+    "cevap": false,
+    "aciklama": "Dünya geoit (kutuplardan basık küre) şeklindedir.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 225,
+    "ifade": "İnternet ve WWW farklı şeylerdir.",
+    "cevap": true,
+    "aciklama": "İnternet altyapı, WWW ise o altyapıdaki hizmetlerden biridir.",
+    "kategori": "Pop Kültür"
+  },
+  {
+    "id": 226,
+    "ifade": "Kola içinde fare ölüsü çıktığı efsanedir.",
+    "cevap": true,
+    "aciklama": "Şirket verilerine göre bu imkansız bir durumdur.",
+    "kategori": "Pop Kültür"
+  },
+  {
+    "id": 227,
+    "ifade": "Arıların 5 gözü vardır.",
+    "cevap": true,
+    "aciklama": "İki ana gözün yanında ışığı algılayan 3 ek gözleri bulunur.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 228,
+    "ifade": "Muz bir ağaçta yetişir.",
+    "cevap": false,
+    "aciklama": "Muz bitkisi odunsu olmadığı için dev bir ot sayılır.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 229,
+    "ifade": "Venüs en sıcak gezegendir.",
+    "cevap": true,
+    "aciklama": "Atmosferi ısıyı hapseder ve 460 dereceleri bulur.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 230,
+    "ifade": "Ses ışıktan daha hızlıdır.",
+    "cevap": false,
+    "aciklama": "Işık hızı saniyede 300.000 km iken ses yaklaşık 340 metredir.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 231,
+    "ifade": "Kutup ayıları beyazdır.",
+    "cevap": false,
+    "aciklama": "Tüyleri şeffaf, derileri ise siyahtır.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 232,
+    "ifade": "İnsan beyni ölünce hemen durmaz.",
+    "cevap": true,
+    "aciklama": "Beyin hücreleri oksijensizlikten ölmeden önce birkaç dakika daha aktif kalabilir.",
+    "kategori": "İnsan Vücudu"
+  },
+  {
+    "id": 233,
+    "ifade": "Dünya'nın uydusu sadece Ay'dır.",
+    "cevap": true,
+    "aciklama": "Doğal tek uydusu Ay'dır.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 234,
+    "ifade": "Plüton gezegendir.",
+    "cevap": false,
+    "aciklama": "Cüce gezegen sınıfındadır.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 235,
+    "ifade": "Kangurular geri yürüyebilir.",
+    "cevap": false,
+    "aciklama": "Sadece ileri doğru zıplayabilirler.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 236,
+    "ifade": "Flamingolar pembe doğarlar.",
+    "cevap": false,
+    "aciklama": "Gri doğarlar, yedikleri gıdalarla pembeleşirler.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 237,
+    "ifade": "Su elektriği iletir.",
+    "cevap": false,
+    "aciklama": "Saf su yalıtkandır; iletkenliği sağlayan içindeki minerallerdir.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 238,
+    "ifade": "Filler zıplayamaz.",
+    "cevap": true,
+    "aciklama": "Dev cüsseleri buna izin vermez.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 239,
+    "ifade": "İnsan dili en güçlü kastır.",
+    "cevap": false,
+    "aciklama": "Çene kası (masseter) güç olarak daha öndedir.",
+    "kategori": "İnsan Vücudu"
+  },
+  {
+    "id": 240,
+    "ifade": "Güneş aslında beyazdır.",
+    "cevap": true,
+    "aciklama": "Atmosferden geçerken saçılma nedeniyle sarı görünür.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 241,
+    "ifade": "Vikingler kasklarında boynuz taşırdı.",
+    "cevap": false,
+    "aciklama": "Boynuzlu kask bir opera tasarımı mitidir.",
+    "kategori": "Tarih"
+  },
+  {
+    "id": 242,
+    "ifade": "Napoleon çok kısaydı.",
+    "cevap": false,
+    "aciklama": "1.68m boyu o dönem için normal bir boydur.",
+    "kategori": "Tarih"
+  },
+  {
+    "id": 243,
+    "ifade": "Sokrates eser bırakmamıştır.",
+    "cevap": true,
+    "aciklama": "Tüm bilgileri öğrencisi Platon'dan öğreniyoruz.",
+    "kategori": "Tarih"
+  },
+  {
+    "id": 244,
+    "ifade": "Çelik kemikten daha sağlamdır.",
+    "cevap": false,
+    "aciklama": "Kemik darbelere karşı esnekliğiyle daha dayanıklıdır.",
+    "kategori": "İnsan Vücudu"
+  },
+  {
+    "id": 245,
+    "ifade": "Ay'ın arka yüzü tamamen karanlıktır.",
+    "cevap": false,
+    "aciklama": "Güneş buraları da aydınlatır; sadece dünyadan görünmez.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 246,
+    "ifade": "Zehirli ve zehirsiz yılanlar kolayca ayrılır.",
+    "cevap": false,
+    "aciklama": "Uzmanlık gerektirir.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 247,
+    "ifade": "Dünyanın en yüksek şelalesi Angel Şelalesi'dir.",
+    "cevap": true,
+    "aciklama": "979 metredir.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 248,
+    "ifade": "Sinek kuşunun ağırlığı paradan hafiftir.",
+    "cevap": true,
+    "aciklama": "Yaklaşık 2 gramdır.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 249,
+    "ifade": "Jüpiter ve Satürn'de elmas yağdığı tahmin edilir.",
+    "cevap": true,
+    "aciklama": "Yüksek basınç karbonu elmasa dönüştürebilir.",
+    "kategori": "Bilim"
+  },
+  {
+    "id": 250,
+    "ifade": "Karıncaların toplam ağırlığı insanlarınkine yakındır.",
+    "cevap": true,
+    "aciklama": "Katrilyonlarca karınca olduğu için biyokütleleri fazladır.",
+    "kategori": "Bilim"
+  }
 ]

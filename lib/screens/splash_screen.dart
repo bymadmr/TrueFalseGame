@@ -21,14 +21,15 @@ class _SplashScreenState extends State<SplashScreen> {
 
   Future<void> _loadData() async {
     await context.read<GameProvider>().initGame();
-    if (mounted) {
-      Future.delayed(const Duration(seconds: 2), () {
-        Navigator.pushReplacement(
-          context,
-          MaterialPageRoute(builder: (context) => const HomeScreen()),
-        );
-      });
-    }
+    if (!mounted) return;
+    
+    Future.delayed(const Duration(seconds: 2), () {
+      if (!mounted) return;
+      Navigator.pushReplacement(
+        context,
+        MaterialPageRoute(builder: (context) => const HomeScreen()),
+      );
+    });
   }
 
   @override
