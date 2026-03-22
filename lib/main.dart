@@ -7,7 +7,11 @@ import 'services/data_service.dart';
 import 'models/question.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-void main() {
+import 'services/ad_service.dart';
+
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  AdService.initialize(); // AdMob başlat (Non-blocking)
   runApp(
     ChangeNotifierProvider(
       create: (context) => GameProvider(),
@@ -41,10 +45,13 @@ class GameProvider with ChangeNotifier {
   int _currentIndex = 0;
   int _streak = 0;
   int _score = 0;
-  int _highScore = 0;
+  int _highScoreClassic = 0;
+  int _highScoreTimeAttack = 0;
+  int _highScoreInfinite = 0;
   int _lives = 3;
   int _totalAnswered = 0;
   int _correctAnswers = 0;
+  int _wrongAnswers = 0;
   int _questionsSinceLastAd = 0;
   int _maxQuestions = 10;
   bool _isLoading = true;
@@ -66,10 +73,18 @@ class GameProvider with ChangeNotifier {
     ? _gameQuestions[_currentIndex] : null;
   int get streak => _streak;
   int get score => _score;
-  int get highScore => _highScore;
+  int get highScore {
+    switch (_selectedMode) {
+      case 'Klasik': return _highScoreClassic;
+      case 'Zamana Karşı': return _highScoreTimeAttack;
+      case 'Sonsuz': return _highScoreInfinite;
+      default: return _highScoreClassic;
+    }
+  }
   int get lives => _lives;
   int get totalAnswered => _totalAnswered;
   int get correctAnswers => _correctAnswers;
+  int get wrongAnswers => _wrongAnswers;
   int get maxQuestions => _maxQuestions;
   bool get isLoading => _isLoading;
   bool get isGameOver => _isGameOver;
@@ -100,15 +115,33 @@ class GameProvider with ChangeNotifier {
     final prefs = await SharedPreferences.getInstance();
     _isSoundEnabled = prefs.getBool('sound') ?? true;
     _isMusicEnabled = prefs.getBool('music') ?? true;
-    _highScore = prefs.getInt('highScore') ?? 0;
+    _highScoreClassic = prefs.getInt('highScoreClassic') ?? 0;
+    _highScoreTimeAttack = prefs.getInt('highScoreTimeAttack') ?? 0;
+    _highScoreInfinite = prefs.getInt('highScoreInfinite') ?? 0;
     notifyListeners();
   }
 
   Future<void> _saveHighScore() async {
-    if (_score > _highScore) {
-      _highScore = _score;
-      final prefs = await SharedPreferences.getInstance();
-      await prefs.setInt('highScore', _highScore);
+    final prefs = await SharedPreferences.getInstance();
+    switch (_selectedMode) {
+      case 'Klasik':
+        if (_score > _highScoreClassic) {
+          _highScoreClassic = _score;
+          await prefs.setInt('highScoreClassic', _highScoreClassic);
+        }
+        break;
+      case 'Zamana Karşı':
+        if (_score > _highScoreTimeAttack) {
+          _highScoreTimeAttack = _score;
+          await prefs.setInt('highScoreTimeAttack', _highScoreTimeAttack);
+        }
+        break;
+      case 'Sonsuz':
+        if (_score > _highScoreInfinite) {
+          _highScoreInfinite = _score;
+          await prefs.setInt('highScoreInfinite', _highScoreInfinite);
+        }
+        break;
     }
   }
 
@@ -149,6 +182,7 @@ class GameProvider with ChangeNotifier {
     _lives = 3;
     _totalAnswered = 0;
     _correctAnswers = 0;
+    _wrongAnswers = 0;
     _isGameOver = false;
     _jokerUsed = false;
     notifyListeners();
@@ -171,10 +205,20 @@ class GameProvider with ChangeNotifier {
       _streak++;
     } else {
       _streak = 0;
-      _lives--;
-      if (_lives <= 0) {
-        _isGameOver = true;
-        _saveHighScore();
+      _wrongAnswers++;
+      if (_selectedMode != 'Zamana Karşı') {
+        _lives--;
+        if (_lives <= 0) {
+          _isGameOver = true;
+          _saveHighScore();
+        }
+      }
+    }
+
+    // Infinite Mode: Every 3 streak adds a life (max 3)
+    if (_selectedMode == 'Sonsuz' && _streak > 0 && _streak % 3 == 0) {
+      if (_lives < 3) {
+        _lives++;
       }
     }
 

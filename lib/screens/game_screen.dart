@@ -8,6 +8,10 @@ import 'package:flutter/services.dart';
 import '../constants/app_colors.dart';
 import '../main.dart';
 import '../widgets/answer_overlay.dart';
+import 'package:google_mobile_ads/google_mobile_ads.dart';
+import '../services/ad_service.dart';
+import 'package:shared_preferences/shared_preferences.dart';
+
 
 class GameScreen extends StatefulWidget {
   const GameScreen({super.key});
@@ -25,6 +29,7 @@ class _GameScreenState extends State<GameScreen> {
   bool _showOverlay = false;
   bool _lastResultCorrect = false;
   bool _isMusicIntense = false;
+  bool _showInfoOverlay = true; // For mode-specific rules info
 
   @override
   void initState() {
@@ -32,6 +37,40 @@ class _GameScreenState extends State<GameScreen> {
     _confettiController = ConfettiController(duration: const Duration(seconds: 1));
     _timerController = CountDownController();
     _startMusic();
+    
+    // AdMob Banner Yükle
+    AdService.loadBannerAd(() {
+      setState(() {});
+    });
+
+    // Joker Tooltip kontrolü
+    _checkJokerTooltip();
+
+    // Mod Bilgilendirme Overlay'ini 2 saniye sonra kapat ve süreyi başlat
+    Future.delayed(const Duration(seconds: 2), () {
+      if (mounted) {
+        setState(() => _showInfoOverlay = false);
+        final provider = context.read<GameProvider>();
+        if (provider.selectedMode == 'Klasik' || provider.selectedMode == 'Zamana Karşı') {
+          _timerController.start();
+        }
+      }
+    });
+  }
+
+  Future<void> _checkJokerTooltip() async {
+    final prefs = await SharedPreferences.getInstance();
+    final jokerShown = prefs.getBool('joker_tooltip_shown') ?? false;
+    if (!jokerShown) {
+      if (!mounted) return;
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(
+          content: Text('İpucu: Joker kullanarak soruyu otomatik olarak doğru geçebilirsin!'),
+          duration: Duration(seconds: 5),
+        ),
+      );
+      await prefs.setBool('joker_tooltip_shown', true);
+    }
   }
 
   Future<void> _startMusic() async {
@@ -60,6 +99,7 @@ class _GameScreenState extends State<GameScreen> {
     _confettiController.dispose();
     _audioPlayer.dispose();
     _musicPlayer.dispose();
+    AdService.dispose();
     super.dispose();
   }
 
@@ -78,6 +118,19 @@ class _GameScreenState extends State<GameScreen> {
 
     provider.answer(userAnswer, timeLeft: timeLeft);
     _playSound(isCorrect);
+    AdService.onQuestionAnswered();
+
+    // Time Attack time adjustment
+    if (provider.selectedMode == 'Zamana Karşı') {
+      int currentTime = int.tryParse(_timerController.getTime() ?? "0") ?? 0;
+      int adjustment = isCorrect ? 2 : -3;
+      int newTime = currentTime + adjustment;
+      if (newTime <= 0) {
+        _timerController.restart(duration: 0);
+      } else {
+        _timerController.restart(duration: newTime);
+      }
+    }
 
     if (!isCorrect) {
       HapticFeedback.heavyImpact(); // Haptic feedback recommendation
@@ -85,6 +138,26 @@ class _GameScreenState extends State<GameScreen> {
 
     if (isCorrect && provider.streak >= 5) {
       _confettiController.play();
+    }
+
+    // Infinite mode life gift visual feedback
+    if (provider.selectedMode == 'Sonsuz' && isCorrect && provider.streak > 0 && provider.streak % 3 == 0) {
+      if (provider.lives < 3) {
+        // SnackBar showing bonus
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(
+            content: Row(
+              children: [
+                Icon(Icons.favorite, color: Colors.red),
+                SizedBox(width: 10),
+                Text('TEBRİKLER! 3 Seri Yaptın, +1 CAN Kazandın!'),
+              ],
+            ),
+            backgroundColor: Colors.green,
+            duration: Duration(seconds: 2),
+          ),
+        );
+      }
     }
 
     setState(() {
@@ -96,7 +169,9 @@ class _GameScreenState extends State<GameScreen> {
   void _nextQuestion() {
     final provider = context.read<GameProvider>();
     if (provider.isGameOver) {
-      Navigator.pop(context); // Go back home or show final stats
+      setState(() {
+        _showOverlay = false;
+      });
       return;
     }
 
@@ -106,10 +181,10 @@ class _GameScreenState extends State<GameScreen> {
     });
     _updateMusicPlaybackRate(1.0);
     provider.nextQuestion();
-    if (provider.selectedMode != 'Zamana Karşı') {
-      _timerController.restart();
-    } else {
+    if (provider.selectedMode == 'Zamana Karşı') {
       _timerController.resume();
+    } else {
+      _timerController.restart(); // Classic mode strictly starts from 15s here
     }
   }
 
@@ -131,10 +206,39 @@ class _GameScreenState extends State<GameScreen> {
 
     if (question == null || provider.isGameOver) {
       if (provider.isGameOver && !_showOverlay) {
-        // This handles cases where game ends between questions
-        WidgetsBinding.instance.addPostFrameCallback((_) {
-          _showGameOverDialog(provider);
-        });
+        return Scaffold(
+          body: Center(
+            child: FadeIn(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  const Icon(Icons.celebration_rounded, color: Colors.amber, size: 80),
+                  const SizedBox(height: 24),
+                  const Text(
+                    'OYUN TAMAMLANDI!',
+                    style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold, letterSpacing: 2),
+                  ),
+                  const SizedBox(height: 48),
+                  SizedBox(
+                    width: 250,
+                    height: 60,
+                    child: ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: AppColors.primary,
+                        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+                      ),
+                      onPressed: () => _showGameOverDialog(provider),
+                      child: const Text(
+                        'SONUÇLARI GÖR',
+                        style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),
+        );
       }
       if (question == null && !provider.isGameOver) {
         return const Scaffold(body: Center(child: CircularProgressIndicator()));
@@ -173,8 +277,10 @@ class _GameScreenState extends State<GameScreen> {
       ),
       body: Stack(
         children: [
+          // Body content (Question, Buttons, etc.)
           Padding(
             padding: const EdgeInsets.all(24.0),
+// ... lines continue ...
             child: Column(
               children: [
                 Row(
@@ -185,45 +291,46 @@ class _GameScreenState extends State<GameScreen> {
                   ],
                 ),
                 const SizedBox(height: 10),
-                CircularCountDownTimer(
-                  duration: provider.selectedMode == 'Zamana Karşı' ? provider.timeLimit : 15,
-                  initialDuration: 0,
-                  controller: _timerController,
-                  width: 60,
-                  height: 60,
-                  ringColor: AppColors.surface,
-                  fillColor: _isMusicIntense ? Colors.red : categoryColor,
-                  backgroundColor: Colors.transparent,
-                  strokeWidth: 8.0,
-                  strokeCap: StrokeCap.round,
-                  textStyle: TextStyle(
-                    fontSize: 20.0,
-                    color: _isMusicIntense ? Colors.red : Colors.white,
-                    fontWeight: FontWeight.bold,
-                  ),
-                  textFormat: CountdownTextFormat.S,
-                  isReverse: true,
-                  isReverseAnimation: true,
-                  isTimerTextShown: true,
-                  autoStart: true,
-                  onComplete: () {
-                    if (!_showOverlay) {
-                      if (provider.selectedMode == 'Zamana Karşı') {
-                        provider.answer(!provider.currentQuestion!.cevap); // Time's up for whole game? No, handle answer as wrong
-                      } else {
-                        _handleAnswer(!provider.currentQuestion!.cevap);
+                if (provider.selectedMode == 'Zamana Karşı' || provider.selectedMode == 'Klasik')
+                  CircularCountDownTimer(
+                    duration: provider.selectedMode == 'Zamana Karşı' ? provider.timeLimit : 15,
+                    initialDuration: 0,
+                    controller: _timerController,
+                    width: 60,
+                    height: 60,
+                    ringColor: AppColors.surface,
+                    fillColor: _isMusicIntense ? Colors.red : categoryColor,
+                    backgroundColor: Colors.transparent,
+                    strokeWidth: 8.0,
+                    strokeCap: StrokeCap.round,
+                    textStyle: TextStyle(
+                      fontSize: 20.0,
+                      color: _isMusicIntense ? Colors.red : Colors.white,
+                      fontWeight: FontWeight.bold,
+                    ),
+                    textFormat: CountdownTextFormat.S,
+                    isReverse: true,
+                    isReverseAnimation: true,
+                    isTimerTextShown: true,
+                    autoStart: false,
+                    onComplete: () {
+                      if (!_showOverlay) {
+                        if (provider.selectedMode == 'Zamana Karşı') {
+                          provider.answer(!provider.currentQuestion!.cevap); // Time's up for whole game? No, handle answer as wrong
+                        } else {
+                          _handleAnswer(!provider.currentQuestion!.cevap);
+                        }
                       }
-                    }
-                  },
-                  onChange: (String timeStamp) {
-                    int time = int.tryParse(timeStamp) ?? provider.timeLimit;
-                    int warningTime = provider.selectedMode == 'Zamana Karşı' ? 10 : 5;
-                    if (time <= warningTime && !_isMusicIntense) {
-                      setState(() => _isMusicIntense = true);
-                      _updateMusicPlaybackRate(1.5);
-                    }
-                  },
-                ),
+                    },
+                    onChange: (String timeStamp) {
+                      int time = int.tryParse(timeStamp) ?? provider.timeLimit;
+                      int warningTime = provider.selectedMode == 'Zamana Karşı' ? 10 : 5;
+                      if (time <= warningTime && !_isMusicIntense) {
+                        setState(() => _isMusicIntense = true);
+                        _updateMusicPlaybackRate(1.5);
+                      }
+                    },
+                  ),
                 const SizedBox(height: 10),
                 LinearProgressIndicator(
                   value: provider.totalAnswered / provider.maxQuestions,
@@ -238,6 +345,10 @@ class _GameScreenState extends State<GameScreen> {
                     key: ValueKey(question?.id ?? 0),
                     child: Container(
                       width: double.infinity,
+                      constraints: const BoxConstraints(
+                        minHeight: 200,
+                        maxHeight: 400,
+                      ),
                       padding: const EdgeInsets.all(32),
                       decoration: BoxDecoration(
                         color: AppColors.surface,
@@ -323,7 +434,13 @@ class _GameScreenState extends State<GameScreen> {
               ],
             ),
           ),
+          
+          // Mode Info Overlay
+          if (_showInfoOverlay)
+            _buildModeInfoOverlay(provider.selectedMode),
+
           Align(
+// ... lines continue ...
             alignment: Alignment.topCenter,
             child: ConfettiWidget(
               confettiController: _confettiController,
@@ -346,6 +463,13 @@ class _GameScreenState extends State<GameScreen> {
             ),
         ],
       ),
+      bottomNavigationBar: AdService.isBannerLoaded && AdService.bannerAd != null
+          ? SizedBox(
+              height: AdService.bannerAd!.size.height.toDouble(),
+              width: AdService.bannerAd!.size.width.toDouble(),
+              child: AdWidget(ad: AdService.bannerAd!),
+            )
+          : null,
     );
   }
 
@@ -392,7 +516,15 @@ class _GameScreenState extends State<GameScreen> {
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
                       _buildMiniStat('Doğru', '${provider.correctAnswers}'),
-                      _buildMiniStat('En Yüksek', '${provider.highScore}'),
+                      _buildMiniStat('Yanlış', '${provider.wrongAnswers}'),
+                    ],
+                  ),
+                  const SizedBox(height: 16),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    children: [
+                      _buildMiniStat('Skor', '${provider.score}'),
+                      _buildMiniStat('Rekor', '${provider.highScore}'),
                     ],
                   ),
                   const SizedBox(height: 40),
@@ -402,7 +534,7 @@ class _GameScreenState extends State<GameScreen> {
                     child: ElevatedButton(
                       onPressed: () {
                         Navigator.pop(context); // Dialog
-                        Navigator.pop(context); // Game Screen
+                        Navigator.pop(context); // Home Screen
                       },
                       style: ElevatedButton.styleFrom(
                         backgroundColor: AppColors.primary,
@@ -413,23 +545,6 @@ class _GameScreenState extends State<GameScreen> {
                         style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
                       ),
                     ),
-                  ),
-                  const SizedBox(height: 12),
-                  TextButton(
-                    onPressed: () {
-                      Navigator.pop(context); // Dialog
-                      provider.startGame(
-                        provider.maxQuestions,
-                        category: provider.selectedCategory,
-                        mode: provider.selectedMode,
-                      );
-                      setState(() {
-                        _showOverlay = false;
-                        _isMusicIntense = false;
-                      });
-                      _timerController.restart();
-                    },
-                    child: const Text('TEKRAR DENE', style: TextStyle(color: AppColors.grey)),
                   ),
                 ],
               ),
@@ -479,6 +594,49 @@ class _GameScreenState extends State<GameScreen> {
               ),
             ),
           ],
+        ),
+      ),
+    );
+  }
+
+  Widget _buildModeInfoOverlay(String mode) {
+    String message = "";
+    IconData icon = Icons.info_outline_rounded;
+    Color color = AppColors.primary;
+
+    if (mode == 'Zamana Karşı') {
+      message = "SINIRSIZ CAN!\nDoğru +2s | Yanlış -3s";
+      icon = Icons.timer_rounded;
+      color = Colors.blue;
+    } else if (mode == 'Sonsuz') {
+      message = "SERİ YAP, CAN KAZAN!\n3 Doğruya +1 Can";
+      icon = Icons.all_inclusive_rounded;
+      color = Colors.purpleAccent;
+    } else {
+      return const SizedBox.shrink();
+    }
+
+    return Container(
+      color: Colors.black.withValues(alpha: 0.8),
+      child: Center(
+        child: FadeInDown(
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              Icon(icon, color: color, size: 80),
+              const SizedBox(height: 24),
+              Text(
+                message,
+                textAlign: TextAlign.center,
+                style: const TextStyle(
+                  color: Colors.white,
+                  fontSize: 24,
+                  fontWeight: FontWeight.bold,
+                  letterSpacing: 1.2,
+                ),
+              ),
+            ],
+          ),
         ),
       ),
     );

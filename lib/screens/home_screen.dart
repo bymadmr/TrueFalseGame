@@ -6,6 +6,7 @@ import '../main.dart';
 import 'game_screen.dart';
 import 'stats_screen.dart';
 import 'settings_screen.dart';
+import 'how_to_play_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -26,7 +27,7 @@ class _HomeScreenState extends State<HomeScreen> {
   final List<Map<String, dynamic>> _modes = [
     {'name': 'Klasik', 'desc': 'Sınırlı Soru', 'icon': Icons.flash_on_rounded},
     {'name': 'Zamana Karşı', 'desc': '60 Saniye', 'icon': Icons.timer_rounded},
-    {'name': 'Sonsuz Mod', 'desc': 'Ölene Kadar', 'icon': Icons.all_inclusive_rounded},
+    {'name': 'Sonsuz', 'desc': 'Ölene Kadar', 'icon': Icons.all_inclusive_rounded},
   ];
 
   @override
@@ -56,6 +57,15 @@ class _HomeScreenState extends State<HomeScreen> {
                             Navigator.push(
                               context,
                               MaterialPageRoute(builder: (context) => const SettingsScreen()),
+                            );
+                          },
+                        ),
+                        IconButton(
+                          icon: const Icon(Icons.help_outline_rounded, color: AppColors.primary),
+                          onPressed: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(builder: (context) => const HowToPlayScreen()),
                             );
                           },
                         ),

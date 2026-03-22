@@ -1,7 +1,7 @@
 name: dogru_yanlis_app
 description: A "True or False" quiz app with interesting facts.
 publish_to: 'none'
-version: 1.0.0+1
+version: 1.0.1+2
 
 environment:
   sdk: '>=3.0.0 <4.0.0'
@@ -16,11 +16,16 @@ dependencies:
   confetti: ^0.7.0
   audioplayers: ^5.2.1
   circular_countdown_timer: ^0.2.3
+  google_mobile_ads: ^5.1.0
+
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^3.0.0
+  flutter_launcher_icons: ^0.14.1
+  flutter_native_splash: ^2.4.0
+
 
 flutter:
   uses-material-design: true
@@ -29,3 +34,20 @@ flutter:
     - assets/audio/correct.mp3
     - assets/audio/wrong.mp3
     - assets/audio/background_music.mp3
+    - assets/images/
+
+flutter_launcher_icons:
+  android: true
+  ios: false
+  image_path: "assets/images/app_icon.png"
+  adaptive_icon_background: "#0D1117"
+  adaptive_icon_foreground: "assets/images/app_icon_foreground.png"
+
+flutter_native_splash:
+  color: "#0D1117"
+  image: assets/images/splash_logo.png
+  android: true
+  ios: false
+  android_12:
+    color: "#0D1117"
+    image: assets/images/splash_logo.png
