@@ -21,7 +21,7 @@ class AdService {
   // Banner reklam yükle
   static void loadBannerAd(Function onLoaded) {
     bannerAd = BannerAd(
-      adUnitId: AdConstants.testBannerAdUnitId, // TODO: production'da bannerAdUnitId kullan
+      adUnitId: AdConstants.bannerAdUnitId,
       size: AdSize.banner,
       request: const AdRequest(),
       listener: BannerAdListener(
@@ -40,7 +40,7 @@ class AdService {
   // Interstitial reklam yükle
   static void loadInterstitialAd() {
     InterstitialAd.load(
-      adUnitId: AdConstants.testInterstitialAdUnitId, // TODO: production'da interstitialAdUnitId kullan
+      adUnitId: AdConstants.interstitialAdUnitId,
       request: const AdRequest(),
       adLoadCallback: InterstitialAdLoadCallback(
         onAdLoaded: (ad) => interstitialAd = ad,

@@ -83,8 +83,15 @@ class _HomeScreenState extends State<HomeScreen> {
                   ],
                 ),
               ),
-              const SizedBox(height: 40),
-              FadeInLeft(
+              const SizedBox(height: 8),
+              Expanded(
+                child: SingleChildScrollView(
+                  physics: const BouncingScrollPhysics(),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      const SizedBox(height: 16),
+                      FadeInLeft(
                 delay: const Duration(milliseconds: 200),
                 child: Container(
                   padding: const EdgeInsets.symmetric(vertical: 32, horizontal: 16),
@@ -231,7 +238,11 @@ class _HomeScreenState extends State<HomeScreen> {
                     ),
                   ),
                 ),
-              const Spacer(),
+                      const SizedBox(height: 24),
+                    ],
+                  ),
+                ),
+              ),
               FadeInUp(
                 delay: const Duration(milliseconds: 400),
                 child: SizedBox(
